@@ -969,14 +969,17 @@ MOBILE
 ========================================= */
 
 .kitty-runner {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 110px;
+    z-index: 5;
+}
 
-    position: relative;
-
-    height: 80px;
-
-    margin-top: 3rem;
-
-    overflow: hidden;
+.kitty-svg {
+    width: 100%;
+    display: block;
+    filter: drop-shadow(0 12px 18px rgba(0,0,0,.18));
 }
 
 .kitty {
@@ -1052,25 +1055,6 @@ MOBILE
     margin-top: 3rem;
 
     overflow: hidden;
-}
-
-.kitty-runner {
-
-    position: absolute;
-
-    left: 0;
-    top: 40px;
-
-    width: 80px;
-
-    z-index: 5;
-}
-
-.kitty-runner img {
-
-    width: 100%;
-
-    display: block;
 }
 
 .kitty-bow {
