@@ -373,6 +373,53 @@ function initKittyAnimation() {
 
   if (!kitty || !bow) return;
 
+  const leftFoot = document.querySelector(".kitty-foot-left");
+  const rightFoot = document.querySelector(".kitty-foot-right");
+  const kittySvg = document.querySelector(".kitty-svg");
+  
+  gsap.to(kitty, {
+    x: () => window.innerWidth - 180,
+    duration: 5,
+    repeat: -1,
+    yoyo: true,
+    ease: "none"
+  });
+  
+  gsap.to(kittySvg, {
+    y: -8,
+    duration: 0.22,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+  
+  gsap.to(leftFoot, {
+    rotation: 22,
+    transformOrigin: "center center",
+    duration: 0.16,
+    repeat: -1,
+    yoyo: true,
+    ease: "none"
+  });
+  
+  gsap.to(rightFoot, {
+    rotation: -22,
+    transformOrigin: "center center",
+    duration: 0.16,
+    repeat: -1,
+    yoyo: true,
+    ease: "none"
+  });
+  
+  gsap.to(bow, {
+    y: -14,
+    rotation: 8,
+    duration: 0.7,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+
   const tl = gsap.timeline({
       repeat: -1,
       repeatDelay: 1
