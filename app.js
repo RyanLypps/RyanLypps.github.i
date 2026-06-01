@@ -301,40 +301,6 @@ function initCountdown() {
                 (1000 * 60)
             );
 
-      const message =
-            document.querySelector(
-                ".countdown-message"
-            );
-        
-        if (message) {
-        
-            if (days <= 0 && hours <= 6) {
-        
-                message.textContent =
-                    "Only a few hours remain.";
-        
-            }
-            else if (days <= 1) {
-        
-                message.textContent =
-                    "Tomorrow we gather.";
-        
-            }
-            else if (days <= 3) {
-        
-                message.textContent =
-                    "The Soirée is nearly here.";
-        
-            }
-            else {
-        
-                message.textContent =
-                    "The doors open soon.";
-        
-            }
-        
-        }
-
         document.getElementById(
             "daysRemaining"
         ).innerHTML =
