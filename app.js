@@ -347,6 +347,59 @@ function initMemoryHunt() {
   });
 }
 
+function blowKiss() {
+
+    const kiss =
+        document.querySelector(".kitty-kiss");
+
+    const kitty =
+        document.querySelector(".kitty-runner");
+
+    if (!kiss || !kitty) return;
+
+    gsap.set(kiss, {
+        opacity: 1,
+        scale: 0.2,
+        x: kitty.offsetLeft + 70,
+        y: kitty.offsetTop + 40
+    });
+
+    gsap.to(kiss, {
+        scale: 8,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        onComplete: createSparkles
+    });
+}
+
+function createSparkles() {
+
+    for (let i = 0; i < 12; i++) {
+
+        const sparkle =
+            document.createElement("div");
+
+        sparkle.className = "sparkle";
+
+        document.body.appendChild(sparkle);
+
+        gsap.set(sparkle, {
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2
+        });
+
+        gsap.to(sparkle, {
+            x: "+=" + gsap.utils.random(-250, 250),
+            y: "+=" + gsap.utils.random(-250, 250),
+            opacity: 0,
+            scale: 0,
+            duration: 1.2,
+            onComplete: () => sparkle.remove()
+        });
+    }
+}
+
 function initKittyAnimation() {
     const kitty = document.querySelector(".kitty-runner");
     const bow = document.querySelector(".kitty-bow");
@@ -435,8 +488,13 @@ function initKittyAnimation() {
             x: () => window.innerWidth - 450,
             duration: 5
         })
-
-        // Pause and "look"
+        
+        // Blow kiss
+        .call(() => {
+            blowKiss();
+        })
+        
+        // Pause and look
         .to(kitty, {
             rotation: -12,
             duration: 0.2,
