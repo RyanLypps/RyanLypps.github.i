@@ -865,3 +865,191 @@ MOBILE
         right: .75rem;
     }
 }
+
+/* =========================================
+   LUXURY COUNTDOWN
+========================================= */
+
+.countdown {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(184,154,94,.18),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #fdfaf6,
+            #f4eee5
+        );
+
+}
+
+.countdown::before {
+
+    content: "✿";
+
+    position: absolute;
+
+    top: 15%;
+    left: 10%;
+
+    font-size: 4rem;
+
+    color: rgba(184,154,94,.15);
+
+    animation:
+        flowerFloat 12s linear infinite;
+}
+
+.countdown::after {
+
+    content: "❀";
+
+    position: absolute;
+
+    top: 25%;
+    right: 12%;
+
+    font-size: 5rem;
+
+    color: rgba(184,154,94,.15);
+
+    animation:
+        flowerFloat 14s linear infinite reverse;
+}
+
+.countdown__number {
+
+    font-size:
+        clamp(
+            8rem,
+            18vw,
+            14rem
+        );
+
+    line-height: .85;
+
+    color: var(--gold);
+
+    text-shadow:
+        0 10px 40px rgba(184,154,94,.25);
+
+    animation:
+        pulseGlow 3s ease-in-out infinite;
+}
+
+.countdown__label {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            1.3rem,
+            2vw,
+            2rem
+        );
+
+    font-style: italic;
+
+    color: var(--charcoal);
+
+    margin-top: 1rem;
+}
+
+.countdown-message {
+
+    margin-top: 2rem;
+
+    font-size: 1.1rem;
+
+    color: var(--charcoal-light);
+
+    font-style: italic;
+}
+
+/* =========================================
+   KITTY RUNNER
+========================================= */
+
+.kitty-runner {
+
+    position: relative;
+
+    height: 80px;
+
+    margin-top: 3rem;
+
+    overflow: hidden;
+}
+
+.kitty {
+
+    position: absolute;
+
+    left: -100px;
+
+    font-size: 3rem;
+
+    animation:
+        kittyRun 12s linear infinite;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes kittyRun {
+
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: calc(100% + 100px);
+    }
+
+}
+
+@keyframes pulseGlow {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes flowerFloat {
+
+    0% {
+
+        transform:
+            translateY(50px)
+            rotate(0deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-80px)
+            rotate(360deg);
+
+    }
+
+}
