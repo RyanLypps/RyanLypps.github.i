@@ -69,6 +69,12 @@ const daysRemaining = document.getElementById("daysRemaining");
 
 let activeFilter = "all";
 
+const kiss = document.createElement("div");
+kiss.className = "kitty-kiss";
+kiss.textContent = "💛";
+
+document.body.appendChild(kiss);
+
 document.addEventListener("DOMContentLoaded", () => {
   initLenis();
   renderExperiences();
