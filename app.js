@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   bindFilters();
   bindHeroButton();
   initCountdown();
+  initKittyAnimation();
   initMemoryHunt();
   initScrollAnimations();
   createModal();
@@ -395,6 +396,64 @@ function initScrollAnimations() {
       scrub: true
     }
   });
+
+function initKittyAnimation() {
+
+  const kitty =
+      document.querySelector(".kitty-runner");
+
+  const bow =
+      document.querySelector(".kitty-bow");
+
+  if (!kitty || !bow) return;
+
+  const tl = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 1
+  });
+
+  tl.set(kitty, {
+      x: -150
+  });
+
+  tl.to(kitty, {
+
+      x: () =>
+          window.innerWidth - 250,
+
+      duration: 6,
+
+      ease: "power1.inOut"
+
+  });
+
+  tl.to(kitty, {
+
+      rotation: -8,
+
+      duration: .2,
+
+      repeat: 8,
+
+      yoyo: true
+
+  }, 0);
+
+  gsap.to(bow, {
+
+      y: -12,
+
+      duration: 1,
+
+      repeat: -1,
+
+      yoyo: true,
+
+      ease: "sine.inOut"
+
+  });
+
+}
 
   gsap.from(".hero__eyebrow, .hero__title, .hero__subtitle, .hero__button", {
     opacity: 0,
