@@ -360,7 +360,45 @@ function blowKiss() {
     const heart =
         document.createElement("div");
 
-    heart.innerHTML = "❤️";
+    heart.innerHTML = `
+      <svg width="60" height="60" viewBox="0 0 120 120">
+      
+        <path
+          d="M60 108
+             C18 76 8 52 8 32
+             C8 14 24 2 42 2
+             C52 2 58 10 60 15
+             C62 10 68 2 78 2
+             C96 2 112 14 112 32
+             C112 52 102 76 60 108Z"
+          fill="#f6a7b5"
+          stroke="#b89a5e"
+          stroke-width="4"
+        />
+      
+        <circle
+          cx="88"
+          cy="25"
+          r="8"
+          fill="#e85d6f"
+        />
+      
+        <path
+          d="M88 25
+             C70 10 62 15 70 32
+             C62 45 80 45 88 25Z"
+          fill="#e85d6f"
+        />
+      
+        <path
+          d="M88 25
+             C106 10 114 15 106 32
+             C114 45 96 45 88 25Z"
+          fill="#e85d6f"
+        />
+      
+      </svg>
+      `;
     heart.className = "kitty-kiss";
 
     document.body.appendChild(heart);
