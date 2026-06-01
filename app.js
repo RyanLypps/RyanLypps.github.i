@@ -301,6 +301,13 @@ function initCountdown() {
                 (1000 * 60)
             );
 
+        const seconds =
+            Math.floor(
+                (diff % (1000 * 60))
+                /
+                1000
+            );
+
         document.getElementById(
             "daysRemaining"
         ).innerHTML =
@@ -312,12 +319,9 @@ function initCountdown() {
             );
 
         if (label) {
-
             label.innerHTML =
-                `${hours} Hours · ${minutes} Minutes<br>Until We Gather`;
-
+              `${hours} Hours · ${minutes} Minutes · ${seconds} Seconds<br>Until We Gather`;
         }
-
     }
 
     updateCountdown();
