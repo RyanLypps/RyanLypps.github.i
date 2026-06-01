@@ -363,110 +363,153 @@ function initScrollAnimations() {
     }
   });
 
-function initKittyAnimation() {
-
-  const kitty =
-      document.querySelector(".kitty-runner");
-
-  const bow =
-      document.querySelector(".kitty-bow");
-
-  if (!kitty || !bow) return;
-
-  const leftFoot = document.querySelector(".kitty-foot-left");
-  const rightFoot = document.querySelector(".kitty-foot-right");
-  const kittySvg = document.querySelector(".kitty-svg");
+  function initKittyAnimation() {
   
-  gsap.to(kitty, {
-    x: () => window.innerWidth - 180,
-    duration: 5,
-    repeat: -1,
-    yoyo: true,
-    ease: "none"
-  });
+      const kitty = document.querySelector(".kitty-runner");
+      const bow = document.querySelector(".kitty-bow");
   
-  gsap.to(kittySvg, {
-    y: -8,
-    duration: 0.22,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
-  });
+      if (!kitty || !bow || !window.gsap) return;
   
-  gsap.to(leftFoot, {
-    rotation: 22,
-    transformOrigin: "center center",
-    duration: 0.16,
-    repeat: -1,
-    yoyo: true,
-    ease: "none"
-  });
+      const leftFoot = document.querySelector(".kitty-foot-left");
+      const rightFoot = document.querySelector(".kitty-foot-right");
+      const kittySvg = document.querySelector(".kitty-svg");
   
-  gsap.to(rightFoot, {
-    rotation: -22,
-    transformOrigin: "center center",
-    duration: 0.16,
-    repeat: -1,
-    yoyo: true,
-    ease: "none"
-  });
+      // Kill any previous animations
+      gsap.killTweensOf([
+          kitty,
+          bow,
+          leftFoot,
+          rightFoot,
+          kittySvg
+      ]);
   
-  gsap.to(bow, {
-    y: -14,
-    rotation: 8,
-    duration: 0.7,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
-  });
-
-  const tl = gsap.timeline({
-      repeat: -1,
-      repeatDelay: 1
-  });
-
-  tl.set(kitty, {
-      x: -150
-  });
-
-  tl.to(kitty, {
-
-      x: () =>
-          window.innerWidth - 250,
-
-      duration: 6,
-
-      ease: "power1.inOut"
-
-  });
-
-  tl.to(kitty, {
-
-      rotation: -8,
-
-      duration: .2,
-
-      repeat: 8,
-
-      yoyo: true
-
-  }, 0);
-
-  gsap.to(bow, {
-
-      y: -12,
-
-      duration: 1,
-
-      repeat: -1,
-
-      yoyo: true,
-
-      ease: "sine.inOut"
-
-  });
-
-}
+      // Running bounce
+      if (kittySvg) {
+          gsap.to(kittySvg, {
+              y: -8,
+              duration: 0.18,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut"
+          });
+      }
+  
+      // Feet movement
+      if (leftFoot) {
+          gsap.to(leftFoot, {
+              rotation: 25,
+              transformOrigin: "center center",
+              duration: 0.12,
+              repeat: -1,
+              yoyo: true,
+              ease: "none"
+          });
+      }
+  
+      if (rightFoot) {
+          gsap.to(rightFoot, {
+              rotation: -25,
+              transformOrigin: "center center",
+              duration: 0.12,
+              repeat: -1,
+              yoyo: true,
+              ease: "none"
+          });
+      }
+  
+      // Bow floating
+      gsap.to(bow, {
+          y: -18,
+          rotation: 10,
+          duration: 0.8,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut"
+      });
+  
+      // Kitty chase timeline
+      const chase = gsap.timeline({
+          repeat: -1,
+          defaults: {
+              ease: "power1.inOut"
+          }
+      });
+  
+      chase
+  
+          // Start positions
+          .set(kitty, {
+              x: -150,
+              scaleX: 1
+          })
+  
+          .set(bow, {
+              x: window.innerWidth - 320
+          })
+  
+          // Run toward bow
+          .to(kitty, {
+              x: () => window.innerWidth - 450,
+              duration: 5
+          })
+  
+          // Pause and "look"
+          .to(kitty, {
+              rotation: -12,
+              duration: 0.2,
+              repeat: 3,
+              yoyo: true
+          })
+  
+          // Bow escapes
+          .to(bow, {
+              x: () => window.innerWidth - 150,
+              duration: 0.8
+          }, "<")
+  
+          // Kitty turns around
+          .set(kitty, {
+              scaleX: -1
+          })
+  
+          // Run back
+          .to(kitty, {
+              x: -150,
+              duration: 5
+          })
+  
+          // Bow moves to left side
+          .to(bow, {
+              x: 150,
+              duration: 0.8
+          }, "<")
+  
+          // Face right again
+          .set(kitty, {
+              scaleX: 1
+          });
+  
+      // Make kitty speed up as countdown gets closer
+      if (typeof daysRemaining !== "undefined") {
+  
+          const days = parseInt(
+              document.getElementById("daysRemaining")?.textContent || "99"
+          );
+  
+          if (days <= 7) {
+              chase.timeScale(1.3);
+          }
+  
+          if (days <= 3) {
+              chase.timeScale(1.7);
+          }
+  
+          if (days <= 1) {
+              chase.timeScale(2.2);
+          }
+      }
+  
+  }
 
   gsap.from(".hero__eyebrow, .hero__title, .hero__subtitle, .hero__button", {
     opacity: 0,
