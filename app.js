@@ -349,31 +349,40 @@ function initMemoryHunt() {
 
 function blowKiss() {
 
+    const kitty =
+        document.querySelector(".kitty-runner");
+
+    if (!kitty) return;
+
+    const rect =
+        kitty.getBoundingClientRect();
+
     const heart =
         document.createElement("div");
 
-    heart.innerHTML = "💛";
+    heart.innerHTML = "❤️";
     heart.className = "kitty-kiss";
 
     document.body.appendChild(heart);
 
-    const rect =
-        document.querySelector(".kitty-runner")
-            .getBoundingClientRect();
-
     gsap.set(heart, {
         position: "fixed",
-        left: rect.left + 60,
-        top: rect.top + 40,
-        fontSize: "40px"
+        left: rect.left + 75,
+        top: rect.top + 45,
+        xPercent: -50,
+        yPercent: -50,
+        scale: 0.3,
+        opacity: 1
     });
 
     gsap.to(heart, {
-        scale: 12,
+        scale: 10,
         opacity: 0,
-        duration: 1.4,
+        duration: 1.2,
         ease: "power3.out",
-        onComplete: () => heart.remove()
+        onComplete: () => {
+            heart.remove();
+        }
     });
 }
 
