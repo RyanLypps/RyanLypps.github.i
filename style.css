@@ -1053,3 +1053,46 @@ MOBILE
     }
 
 }
+
+.kitty-scene {
+
+    position: relative;
+
+    height: 140px;
+
+    margin-top: 3rem;
+
+    overflow: hidden;
+}
+
+.kitty-runner {
+
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 80px;
+
+    z-index: 5;
+}
+
+.kitty-runner img {
+
+    width: 100%;
+
+    display: block;
+}
+
+.kitty-bow {
+
+    position: absolute;
+
+    right: 80px;
+
+    top: 35px;
+
+    font-size: 3rem;
+
+    z-index: 4;
+}
