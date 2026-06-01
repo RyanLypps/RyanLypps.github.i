@@ -978,11 +978,13 @@ MOBILE
 }
 
 .kitty-kiss {
-    position: absolute;
-    font-size: 1.8rem;
-    opacity: 0;
+    position: fixed;
+    font-size: 2rem;
+    line-height: 1;
     pointer-events: none;
-    z-index: 50;
+    z-index: 99999;
+    transform-origin: center center;
+    will-change: transform;
 }
 
 .sparkle {
