@@ -977,6 +977,14 @@ MOBILE
   will-change: transform;
 }
 
+.kitty-kiss {
+    position: absolute;
+    font-size: 1.8rem;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 50;
+}
+
 .kitty-svg {
     width: 100%;
     display: block;
