@@ -69,12 +69,6 @@ const daysRemaining = document.getElementById("daysRemaining");
 
 let activeFilter = "all";
 
-const kiss = document.createElement("div");
-kiss.className = "kitty-kiss";
-kiss.textContent = "💛";
-
-document.body.appendChild(kiss);
-
 document.addEventListener("DOMContentLoaded", () => {
   initLenis();
   renderExperiences();
@@ -355,27 +349,31 @@ function initMemoryHunt() {
 
 function blowKiss() {
 
-    const kiss =
-        document.querySelector(".kitty-kiss");
+    const heart =
+        document.createElement("div");
 
-    const kitty =
-        document.querySelector(".kitty-runner");
+    heart.innerHTML = "💛";
+    heart.className = "kitty-kiss";
 
-    if (!kiss || !kitty) return;
+    document.body.appendChild(heart);
 
-    gsap.set(kiss, {
-        opacity: 1,
-        scale: 0.2,
-        x: kitty.offsetLeft + 70,
-        y: kitty.offsetTop + 40
+    const rect =
+        document.querySelector(".kitty-runner")
+            .getBoundingClientRect();
+
+    gsap.set(heart, {
+        position: "fixed",
+        left: rect.left + 60,
+        top: rect.top + 40,
+        fontSize: "40px"
     });
 
-    gsap.to(kiss, {
-        scale: 8,
+    gsap.to(heart, {
+        scale: 12,
         opacity: 0,
-        duration: 1.5,
-        ease: "power2.out",
-        onComplete: createSparkles
+        duration: 1.4,
+        ease: "power3.out",
+        onComplete: () => heart.remove()
     });
 }
 
