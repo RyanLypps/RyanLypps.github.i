@@ -969,11 +969,12 @@ MOBILE
 ========================================= */
 
 .kitty-runner {
-    position: absolute;
-    left: 0;
-    top: 25px;
-    width: 110px;
-    z-index: 5;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 110px;
+  z-index: 5;
+  will-change: transform;
 }
 
 .kitty-svg {
