@@ -232,20 +232,99 @@ function closeModal() {
 }
 
 function initCountdown() {
-  if (!daysRemaining) return;
 
-  const arrivalDate = new Date("2026-06-15T12:00:00");
+    const revealDate = new Date(
+        "2026-06-10T12:00:00-04:00"
+    );
 
-  function updateCountdown() {
     const now = new Date();
-    const difference = arrivalDate - now;
-    const days = Math.max(0, Math.ceil(difference / (1000 * 60 * 60 * 24)));
 
-    daysRemaining.textContent = days;
-  }
+    const countdownSection =
+        document.getElementById("countdown-section");
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000 * 60 * 60);
+    const mainContent =
+        document.getElementById("main-content");
+
+    if (now >= revealDate) {
+
+        if (countdownSection) {
+            countdownSection.style.display = "none";
+        }
+
+        if (mainContent) {
+            mainContent.style.display = "block";
+        }
+
+        const subtitle =
+            document.querySelector(".hero__subtitle");
+
+        if (subtitle) {
+            subtitle.textContent =
+                "The Gathering Has Begun";
+        }
+
+        return;
+    }
+
+    if (mainContent) {
+        mainContent.style.display = "none";
+    }
+
+    if (countdownSection) {
+        countdownSection.style.display = "block";
+    }
+
+    function updateCountdown() {
+
+        const now = new Date();
+
+        const diff =
+            revealDate - now;
+
+        const days =
+            Math.floor(
+                diff / (1000 * 60 * 60 * 24)
+            );
+
+        const hours =
+            Math.floor(
+                (diff % (1000 * 60 * 60 * 24))
+                /
+                (1000 * 60 * 60)
+            );
+
+        const minutes =
+            Math.floor(
+                (diff % (1000 * 60 * 60))
+                /
+                (1000 * 60)
+            );
+
+        document.getElementById(
+            "daysRemaining"
+        ).innerHTML =
+            `${days}<span> Days</span>`;
+
+        const label =
+            document.querySelector(
+                ".countdown__label"
+            );
+
+        if (label) {
+
+            label.innerHTML =
+                `${hours} Hours · ${minutes} Minutes<br>Until We Gather`;
+
+        }
+
+    }
+
+    updateCountdown();
+
+    setInterval(
+        updateCountdown,
+        1000
+    );
 }
 
 function initMemoryHunt() {
