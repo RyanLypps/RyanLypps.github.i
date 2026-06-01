@@ -985,6 +985,16 @@ MOBILE
     z-index: 50;
 }
 
+.sparkle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d4b06a;
+    pointer-events: none;
+    z-index: 9999;
+}
+
 .kitty-svg {
     width: 100%;
     display: block;
