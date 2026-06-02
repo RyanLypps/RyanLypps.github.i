@@ -1139,19 +1139,21 @@ MOBILE
 @keyframes flowerFloat {
 
     0% {
-
         transform:
-            translateY(50px)
+            translateY(0)
             rotate(0deg);
+    }
 
+    50% {
+        transform:
+            translateY(-25px)
+            rotate(180deg);
     }
 
     100% {
-
         transform:
-            translateY(-80px)
+            translateY(0)
             rotate(360deg);
-
     }
 
 }
