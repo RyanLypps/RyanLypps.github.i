@@ -246,9 +246,9 @@ async function initCountdown() {
 
     const countdownSection =
         document.getElementById("countdown-section");
-
     const mainContent =
         document.getElementById("main-content");
+    let bypassReveal = false;
 
     try {
 
@@ -259,16 +259,13 @@ async function initCountdown() {
             await response.json();
 
         if (DEV_IPS.includes(data.ip)) {
-          if (mainContent) {
-              mainContent.style.display = "block";
-          }
       
-          if (countdownSection) {
-              countdownSection.style.display = "block";
-          }
-    
-          return;
-      }
+            bypassReveal = true;
+        
+            if (mainContent) {
+                mainContent.style.display = "block";
+            }
+        }
 
     } catch (e) {
         console.log("IP check failed");
@@ -301,7 +298,7 @@ async function initCountdown() {
         return;
     }
 
-    if (mainContent) {
+    if (mainContent && !bypassReveal) {
         mainContent.style.display = "none";
     }
 
