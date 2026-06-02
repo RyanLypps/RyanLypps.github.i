@@ -82,19 +82,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function initLenis() {
-  if (!window.Lenis) return;
 
-  const lenis = new Lenis({
-    duration: 1.2,
-    smoothWheel: true
-  });
+    // Disable on phones/tablets
+    if (window.innerWidth <= 768) {
+        return;
+    }
 
-  function raf(time) {
-    lenis.raf(time);
+    if (!window.Lenis) return;
+
+    const lenis = new Lenis({
+        duration: 1.2,
+        smoothWheel: true
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
 }
 
 function renderExperiences() {
