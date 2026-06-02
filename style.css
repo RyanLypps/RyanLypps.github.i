@@ -99,15 +99,6 @@ text-align: center;
 margin-bottom: 4rem;
 }
 
-.section-header__eyebrow {
-display: inline-block;
-text-transform: uppercase;
-letter-spacing: .2em;
-color: var(--gold);
-font-size: .8rem;
-margin-bottom: 1rem;
-}
-
 /* =========================================
 PROGRESS BAR
 ========================================= */
