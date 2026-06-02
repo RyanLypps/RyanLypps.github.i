@@ -1104,6 +1104,24 @@ MOBILE
 
 }
 
+@media (max-width: 768px) {
+
+    .countdown::before {
+        top: 2%;
+        left: -20px;
+        font-size: 2.5rem;
+        opacity: .4;
+    }
+
+    .countdown::after {
+        top: 2%;
+        right: -20px;
+        font-size: 3rem;
+        opacity: .4;
+    }
+
+}
+
 /* =========================================
    ANIMATIONS
 ========================================= */
