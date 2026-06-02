@@ -340,18 +340,21 @@ function initCountdown() {
         }
 
         if (window.gsap && secondsEl) {
+            gsap.killTweensOf(secondsEl);
+        
             gsap.fromTo(
                 secondsEl,
                 {
-                    scale: 1.15
+                    scale: 1.12
                 },
                 {
                     scale: 1,
-                    duration: 0.25,
+                    duration: 0.3,
                     ease: "power2.out"
                 }
             );
         }
+      
     }
 
     updateCountdown();
