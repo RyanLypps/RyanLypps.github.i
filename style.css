@@ -538,13 +538,12 @@ COUNTDOWN
     margin-bottom: 1rem;
     color: var(--pink);
     font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
     font-size: clamp(2.8rem, 5vw, 4.5rem);
     letter-spacing: .03em;
-    line-height: 1.1;
-    text-shadow:
-        0 4px 20px rgba(212,165,176,.20);
     opacity: 1;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: .05em;
 }
 
 .countdown-clock {
