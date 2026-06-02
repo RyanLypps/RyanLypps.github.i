@@ -511,6 +511,16 @@ COUNTDOWN
     text-align: center;
 }
 
+.countdown-date {
+    margin-top: 1.5rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    letter-spacing: .08em;
+    color: var(--pink);
+    opacity: .9;
+}
+
 .countdown-header-v1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
