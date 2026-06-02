@@ -533,6 +533,10 @@ COUNTDOWN
     text-align: center;
 }
 
+.countdown-unit small {
+    color: var(--pink);
+}
+
 .countdown-header-v1 {
     color: var(--pink);
     text-shadow: 0 4px 20px rgba(212,165,176,.25);
