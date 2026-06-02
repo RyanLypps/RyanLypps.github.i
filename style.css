@@ -614,6 +614,10 @@ COUNTDOWN
 
     }
 
+    .countdown__display {
+        padding-top: 4rem;
+    }
+
     .countdown-unit {
 
         min-width: 75px;
