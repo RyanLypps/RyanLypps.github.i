@@ -999,23 +999,22 @@ MOBILE
 }
 
 .countdown__number {
-
     font-size:
         clamp(
             8rem,
             18vw,
             14rem
         );
-
     line-height: .85;
-
     color: var(--gold);
-
     text-shadow:
         0 10px 40px rgba(184,154,94,.25);
-
     animation:
         pulseGlow 3s ease-in-out infinite;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .5rem;
 }
 
 .countdown__label {
