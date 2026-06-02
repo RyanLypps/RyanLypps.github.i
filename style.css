@@ -184,7 +184,7 @@ HERO
     overflow: hidden;
 
     background:
-        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")
+        url("./images/cute-photo.jpg")
         center center / cover;
 }
 
