@@ -563,69 +563,63 @@ function initKittyAnimation() {
 
     // Kitty chase timeline
     const chase = gsap.timeline({
-        repeat: -1,
-        defaults: {
-            ease: "power1.inOut"
-        }
+    repeat: -1,
+    defaults: {
+        ease: "power1.inOut"
+    }
+});
+
+const leftSide = 20;
+const rightSide = () => window.innerWidth - (isMobile ? 140 : 260);
+
+chase
+
+    .set(kitty, {
+        x: leftSide,
+        scaleX: 1
+    })
+
+    .set(bow, {
+        x: rightSide()
+    })
+
+    // Run right
+    .to(kitty, {
+        x: rightSide,
+        duration: 4.5
+    })
+
+    .call(() => blowKiss())
+
+    .to(kitty, {
+        rotation: -10,
+        duration: 0.15,
+        repeat: 2,
+        yoyo: true
+    })
+
+    .set(kitty, {
+        scaleX: -1
+    })
+
+    // Run left
+    .to(kitty, {
+        x: leftSide,
+        duration: 4.5
+    })
+
+    .call(() => blowKiss())
+
+    .to(kitty, {
+        rotation: 10,
+        duration: 0.15,
+        repeat: 2,
+        yoyo: true
+    })
+
+    .set(kitty, {
+        scaleX: 1
     });
-
-    chase
-
-        // Start positions
-        .to(kitty, {
-            x: kittyTargetX,
-            duration: 5
-        })
-
-        .to(bow, {
-            x: bowTargetX,
-            duration: 0.8
-        }, "<")
-
-        // Run toward bow
-        .to(kitty, {
-            x: () => Math.max(40, window.innerWidth - 220),
-            duration: 5
-        })
-        
-        // Blow kiss
-        .call(() => blowKiss(), null, "+=1")
-        
-        // Pause and look
-        .to(kitty, {
-            rotation: -12,
-            duration: 0.2,
-            repeat: 3,
-            yoyo: true
-        })
-
-        // Bow escapes
-        .to(bow, {
-            x: () => window.innerWidth - 150,
-            duration: 0.8
-        }, "<")
-
-        // Kitty turns around
-        .set(kitty, {
-            scaleX: -1
-        })
-
-        // Run back
-        .to(kitty, {
-            x: -150,
-            duration: 5
-        })
-
-        // Bow moves to left side
-        .to(bow, {
-            x: 150,
-            duration: 0.8
-        }, "<")
-
-        // Face right again
-        .set(kitty, {
-            scaleX: 1
-        });
 
     // Make kitty speed up as countdown gets closer
     if (typeof daysRemaining !== "undefined") {
