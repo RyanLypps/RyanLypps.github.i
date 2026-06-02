@@ -498,6 +498,16 @@ function initKittyAnimation() {
     const rightFoot = document.querySelector(".kitty-foot-right");
     const kittySvg = document.querySelector(".kitty-svg");
 
+  const isMobile = window.innerWidth < 768;
+
+  const kittyTargetX = isMobile
+      ? () => window.innerWidth - 140
+      : () => window.innerWidth - 450;
+  
+  const bowTargetX = isMobile
+      ? () => window.innerWidth - 70
+      : () => window.innerWidth - 150;
+
     // Kill any previous animations
     gsap.killTweensOf([
         kitty,
@@ -562,25 +572,24 @@ function initKittyAnimation() {
     chase
 
         // Start positions
-        .set(kitty, {
-            x: -150,
-            scaleX: 1
+        .to(kitty, {
+            x: kittyTargetX,
+            duration: 5
         })
 
-        .set(bow, {
-            x: window.innerWidth - 320
-        })
+        .to(bow, {
+            x: bowTargetX,
+            duration: 0.8
+        }, "<")
 
         // Run toward bow
         .to(kitty, {
-            x: () => window.innerWidth - 450,
+            x: () => Math.max(40, window.innerWidth - 220),
             duration: 5
         })
         
         // Blow kiss
-        .call(() => {
-            blowKiss();
-        })
+        .call(() => blowKiss(), null, "+=1")
         
         // Pause and look
         .to(kitty, {
