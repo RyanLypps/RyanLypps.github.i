@@ -533,10 +533,6 @@ COUNTDOWN
     text-align: center;
 }
 
-.countdown-unit small {
-    color: var(--pink);
-}
-
 .countdown-header-v1 {
     color: var(--pink);
     text-shadow: 0 4px 20px rgba(212,165,176,.25);
@@ -589,16 +585,11 @@ COUNTDOWN
 }
 
 .countdown-unit small {
-
     margin-top: .4rem;
-
     text-transform: uppercase;
-
     letter-spacing: .2em;
-
     font-size: .7rem;
-
-    color: var(--charcoal-light);
+    color: var(--pink);
 }
 
 .countdown-separator {
@@ -649,12 +640,8 @@ color: var(--gold);
 }
 
 .countdown__label {
-text-transform: uppercase;
-
-
-letter-spacing: .25em;
-
-
+    text-transform: uppercase;
+    letter-spacing: .25em;
 }
 
 /* =========================================
@@ -1037,22 +1024,17 @@ MOBILE
 }
 
 .countdown__label {
-
     font-family:
         "Cormorant Garamond",
         serif;
-
     font-size:
         clamp(
             1.3rem,
             2vw,
             2rem
         );
-
     font-style: italic;
-
-    color: var(--charcoal);
-
+    color: var(--pink);
     margin-top: 1rem;
 }
 
