@@ -146,29 +146,50 @@ background: linear-gradient(
     display: none;
 }
 
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 55vh;
+    }
+
+    .hero__title {
+        font-size: clamp(2.8rem, 10vw, 5rem);
+    }
+
+    .hero__content {
+        padding: 2rem 1.5rem 4rem;
+    }
+
+    .countdown {
+        min-height: 45vh;
+        padding: 2rem 1rem;
+    }
+
+    .countdown__number {
+        font-size: clamp(5rem, 16vw, 8rem);
+    }
+
+    .kitty-scene {
+        height: 90px;
+        margin-top: 1rem;
+    }
+}
+
 /* =========================================
 HERO
 ========================================= */
 
 .hero {
-position: relative;
-
-
-min-height: 100vh;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-text-align: center;
-
-overflow: hidden;
-
-background:
-    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")
-    center center / cover;
-
-
+    position: relative;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background:
+        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")
+        center center / cover;
 }
 
 .hero__overlay {
@@ -528,10 +549,10 @@ COUNTDOWN
 ========================================= */
 
 .countdown {
-    padding:
-    7rem
-    1.5rem;
-    text-align: center;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .countdown-clock {
