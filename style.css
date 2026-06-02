@@ -562,6 +562,10 @@ COUNTDOWN
 
 }
 
+.countdown__display {
+    padding-top: 9rem;
+}
+
 .countdown-unit span {
 
     font-family:
