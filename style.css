@@ -146,39 +146,7 @@ background: linear-gradient(
     display: none;
 }
 
-.landing-screen {
-
-    height: 100dvh;
-    min-height: 100svh;
-    display: grid;
-    grid-template-rows:
-        1.4fr
-        1fr;
-}
-
-.hero {
-    min-height: 0;
-    height: auto;
-}
-
-.countdown {
-    min-height: 0;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 @media (max-width: 768px) {
-
-    .landing-screen {
-
-        grid-template-rows:
-            1.2fr
-            1fr;
-    }
-
     .hero__content {
         padding:
             1rem
@@ -206,7 +174,7 @@ HERO
 
 .hero {
     position: relative;
-    min-height: 0;
+    min-height: 100dvh;
     height: auto;
 
     display: flex;
@@ -574,7 +542,7 @@ COUNTDOWN
 ========================================= */
 
 .countdown {
-    min-height: 0;
+    min-height: 100dvh;
     height: auto;
 
     display: flex;
