@@ -4,20 +4,12 @@ style.css
 ========================================= */
 
 :root {
---cream: #f8f4ee;
---cream-dark: #f1ece4;
-
-
---sage: #95a28a;
---sage-dark: #78826f;
-
---gold: #b89a5e;
---gold-light: #d8c08a;
-
---charcoal: #1f1f1f;
---charcoal-light: #404040;
-
 --rose: #d7b5ac;
+--cream: #F8F4EE;
+--gold: #B89A5E;
+--sage: #95A28A;
+--pink: #D4A5B0;
+--charcoal: #1F1F1F;
 
 --white: #ffffff;
 
@@ -535,11 +527,15 @@ COUNTDOWN
 .countdown {
     min-height: 100dvh;
     height: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+.countdown-header-v1 {
+    color: var(--pink);
+    text-shadow: 0 4px 20px rgba(212,165,176,.25);
 }
 
 .countdown-clock {
