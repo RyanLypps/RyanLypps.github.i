@@ -244,6 +244,12 @@ function closeModal() {
 
 async function initCountdown() {
 
+    const countdownSection =
+        document.getElementById("countdown-section");
+
+    const mainContent =
+        document.getElementById("main-content");
+
     try {
 
         const response =
@@ -253,14 +259,16 @@ async function initCountdown() {
             await response.json();
 
         if (DEV_IPS.includes(data.ip)) {
-
-            const mainContent =
-                document.getElementById("main-content");
-
-            if (mainContent) {
-                mainContent.style.display = "block";
-            }
-        }
+          if (mainContent) {
+              mainContent.style.display = "block";
+          }
+      
+          if (countdownSection) {
+              countdownSection.style.display = "block";
+          }
+    
+          return;
+      }
 
     } catch (e) {
         console.log("IP check failed");
@@ -271,12 +279,6 @@ async function initCountdown() {
     );
 
     const now = new Date();
-
-    const countdownSection =
-        document.getElementById("countdown-section");
-
-    const mainContent =
-        document.getElementById("main-content");
 
     if (now >= revealDate) {
 
