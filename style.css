@@ -129,36 +129,6 @@ background: linear-gradient(
     display: none;
 }
 
-@media (max-width: 768px) {
-    .hero__content {
-        padding:
-            1rem
-            1rem
-            2rem;
-    }
-
-    .hero__title {
-        font-size:
-            clamp(
-                2.5rem,
-                8vw,
-                4rem
-            );
-    }
-
-    .kitty-scene {
-        height: 75px;
-        margin-top: .5rem;
-        margin-bottom: .25rem;
-    }
-
-    .kitty-runner {
-        width: 70px;
-        top: 3px;
-    }
-
-}
-
 /* =========================================
 HERO
 ========================================= */
@@ -1179,7 +1149,7 @@ MOBILE
 
 .kitty-scene {
     position: relative;
-    height: 90px;
+    height: 125px;
     margin-top: .75rem;
     margin-bottom: .5rem;
     overflow: hidden;
