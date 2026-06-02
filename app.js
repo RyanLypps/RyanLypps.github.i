@@ -592,28 +592,28 @@ function initKittyAnimation() {
         ease: "sine.inOut"
     });
 
+    gsap.set(kitty, {
+        x: leftSide,
+        scaleX: 1
+    });
+    
+    gsap.set(bow, {
+        x: rightSide()
+    });
+
     // Kitty chase timeline
     const chase = gsap.timeline({
-    repeat: -1,
-    defaults: {
-        ease: "power1.inOut"
-    }
-});
+        repeat: -1,
+        repeatDelay: 0,
+        defaults: {
+            ease: "power1.inOut"
+        }
+    });
 
 const leftSide = 20;
 const rightSide = () => window.innerWidth - (isMobile ? 140 : 260);
 
 chase
-
-    .set(kitty, {
-        x: leftSide,
-        scaleX: 1
-    })
-
-    .set(bow, {
-        x: rightSide()
-    })
-
     // Run right
     .to(kitty, {
         x: rightSide,
