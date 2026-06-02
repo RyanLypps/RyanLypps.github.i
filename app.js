@@ -313,14 +313,44 @@ function initCountdown() {
         ).innerHTML =
             `${days}<span> Days</span>`;
 
-        const label =
-            document.querySelector(
-                ".countdown__label"
-            );
+        const hoursEl =
+            document.getElementById("hoursRemaining");
+        
+        const minutesEl =
+            document.getElementById("minutesRemaining");
+        
+        const secondsEl =
+            document.getElementById("secondsRemaining");
+        
+        if (
+            hoursEl &&
+            minutesEl &&
+            secondsEl
+        ) {
+        
+            hoursEl.textContent =
+                String(hours).padStart(2, "0");
+        
+            minutesEl.textContent =
+                String(minutes).padStart(2, "0");
+        
+            secondsEl.textContent =
+                String(seconds).padStart(2, "0");
+        
+        }
 
-        if (label) {
-            label.innerHTML =
-              `${hours} Hours · ${minutes} Minutes · ${seconds} Seconds<br>Until We Gather`;
+        if (window.gsap && secondsEl) {
+            gsap.fromTo(
+                secondsEl,
+                {
+                    scale: 1.15
+                },
+                {
+                    scale: 1,
+                    duration: 0.25,
+                    ease: "power2.out"
+                }
+            );
         }
     }
 
