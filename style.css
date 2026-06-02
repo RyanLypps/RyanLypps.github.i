@@ -1088,7 +1088,7 @@ MOBILE
 
     .kitty-scene {
         height: 80px;
-        margin-top: 2rem;
+        margin-top: 3.75rem;
     }
 
     .kitty-runner {
@@ -1159,7 +1159,7 @@ MOBILE
 .kitty-scene {
     position: relative;
     height: 125px;
-    margin-top: .75rem;
+    margin-top: 3.75rem;
     margin-bottom: .5rem;
     overflow: hidden;
 }
