@@ -534,7 +534,7 @@ COUNTDOWN
 }
 
 .countdown-header-v1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     color: var(--pink);
     font-family: "Cormorant Garamond", serif;
@@ -544,6 +544,7 @@ COUNTDOWN
     line-height: 1.1;
     text-shadow:
         0 4px 20px rgba(212,165,176,.20);
+    opacity: 1;
 }
 
 .countdown-clock {
