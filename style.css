@@ -528,14 +528,98 @@ COUNTDOWN
 ========================================= */
 
 .countdown {
-padding:
-7rem
-1.5rem;
+    padding:
+    7rem
+    1.5rem;
+    text-align: center;
+}
 
+.countdown-clock {
 
-text-align: center;
+    display: flex;
 
+    justify-content: center;
 
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.countdown-unit {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 100px;
+
+}
+
+.countdown-unit span {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            2.5rem,
+            6vw,
+            4rem
+        );
+
+    color: var(--gold);
+
+    line-height: 1;
+}
+
+.countdown-unit small {
+
+    margin-top: .4rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .2em;
+
+    font-size: .7rem;
+
+    color: var(--charcoal-light);
+}
+
+.countdown-separator {
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3rem
+        );
+
+    color: var(--gold);
+
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .countdown-clock {
+
+        gap: .5rem;
+
+    }
+
+    .countdown-unit {
+
+        min-width: 75px;
+
+    }
 }
 
 .countdown__number {
