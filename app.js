@@ -260,8 +260,6 @@ async function initCountdown() {
             if (mainContent) {
                 mainContent.style.display = "block";
             }
-
-            return;
         }
 
     } catch (e) {
