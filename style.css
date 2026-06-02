@@ -975,7 +975,7 @@ MOBILE
 
     font-size: 4rem;
 
-    color: rgba(184,154,94,.15);
+    color: #F0D6DE;
 
     animation:
         flowerFloat 12s linear infinite;
@@ -992,7 +992,7 @@ MOBILE
 
     font-size: 5rem;
 
-    color: rgba(184,154,94,.15);
+    color: #F0D6DE;
 
     animation:
         flowerFloat 14s linear infinite reverse;
