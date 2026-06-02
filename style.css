@@ -1114,7 +1114,7 @@ MOBILE
     }
 
     .countdown::after {
-        top: 27%;
+        top: 22%;
         right: 24px;
         font-size: 4rem;
         opacity: .45;
