@@ -129,6 +129,12 @@ background: linear-gradient(
     display: none;
 }
 
+.days-value {
+    display: inline-block;
+    min-width: 2ch;
+    text-align: right;
+}
+
 /* =========================================
 HERO
 ========================================= */
