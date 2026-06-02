@@ -1,63 +1,127 @@
 const experiences = [
   {
     id: 1,
-    title: "Charcuterie Night",
-    date: "Friday Evening",
+    title: "The Southern Hemp Social",
     location: "At Home",
     tags: ["home", "food"],
-    image: "https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=1600",
-    short: "Arrival, snacks, drinks, blankets, and a cozy first night.",
+    image: "",
+    short: "A slow Southern evening of conversation, snacks, and shared memories.",
     description:
-      "A relaxed welcome evening with charcuterie, drinks, soft lighting, music, blankets, and easy conversation.",
-    details: ["Welcome drinks", "Charcuterie board", "Nostalgic movie", "Cozy living room setup"]
+      "An easygoing gathering centered around comfort, laughter, good company, and unhurried conversation.",
+    details: [
+      "Conversation",
+      "Relaxation",
+      "Snacks & treats",
+      "Time together"
+    ]
   },
+
   {
     id: 2,
-    title: "Botanical Wandering",
-    date: "Saturday",
-    location: "South Carolina Botanical Garden",
+    title: "The Botanical Promenade",
+    location: "Daniel Stowe Botanical Gardens",
     tags: ["out", "photos"],
-    image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1600",
-    short: "Flowers, garden paths, slow wandering, and pretty photos.",
+    image: "",
+    short: "Garden paths, flowers, wandering, and beautiful photographs.",
     description:
-      "A garden-centered outing made for walking slowly, taking photos, finding hidden corners, and enjoying the day without rushing.",
-    details: ["Garden walk", "Polaroid photos", "Coffee or lunch after", "Golden-hour stop if time allows"]
+      "A leisurely stroll through blooming gardens, hidden pathways, and peaceful corners perfect for photographs and conversation.",
+    details: [
+      "Garden walk",
+      "Polaroid photos",
+      "Flower displays",
+      "Slow wandering"
+    ]
   },
+
   {
     id: 3,
-    title: "The Apothecary Hour",
-    date: "Sunday",
-    location: "At Home",
-    tags: ["home"],
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1600",
-    short: "Tea, skincare, candles, journals, and soft music.",
+    title: "The Boulevard Stroll",
+    location: "South End, Charlotte",
+    tags: ["out"],
+    image: "",
+    short: "Shops, cafés, murals, and an afternoon exploring together.",
     description:
-      "A quiet, pretty reset with tea, candles, skincare, soft music, and little rituals that make the evening feel intentional.",
-    details: ["Tea", "Face masks", "Candles", "Journaling", "Relaxing playlist"]
+      "A relaxed walk through South End enjoying local shops, coffee stops, murals, and the charm of the neighborhood.",
+    details: [
+      "Walking",
+      "Coffee stop",
+      "Local shops",
+      "Exploration"
+    ]
   },
+
   {
     id: 4,
-    title: "Golden Hour Portraits",
-    date: "Flexible",
-    location: "TBD",
-    tags: ["photos", "out"],
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600",
-    short: "Timeless photos that feel like heirlooms.",
+    title: "The Matriarch's Apothecary Hour",
+    location: "At Home",
+    tags: ["home", "food"],
+    image: "",
+    short: "Candles, charcuterie, skincare, films, music, and comfort.",
     description:
-      "A short portrait session during the prettiest light of the day, focused on photos that feel warm, elegant, and worth keeping.",
-    details: ["Polaroids", "Group photos", "Solo portraits", "Heirloom-style shots"]
+      "An evening devoted to comfort and connection with candles, skincare, charcuterie, nostalgic films, music, mocktails, blankets, Polaroids, and meaningful conversation.",
+    details: [
+      "Candles",
+      "Charcuterie",
+      "Skincare",
+      "Mocktails",
+      "Nostalgic films",
+      "Polaroids",
+      "Music",
+      "Blankets"
+    ]
   },
+
   {
     id: 5,
-    title: "Placeholder Activity",
-    date: "TBD",
+    title: "Generations in Bloom",
     location: "TBD",
-    tags: ["out"],
-    image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600",
-    short: "A future activity to add later.",
+    tags: ["photos"],
+    image: "",
+    short: "A collection of photographs celebrating friendship and family.",
     description:
-      "This is a placeholder activity so the layout is ready while you continue planning.",
-    details: ["Add time", "Add location", "Add notes", "Add photos"]
+      "A portrait session focused on maternity photographs, mommy-and-me moments, best-friend portraits, and timeless images to treasure for years.",
+    details: [
+      "Maternity portraits",
+      "Mommy & me photos",
+      "Best friend portraits",
+      "Polaroids",
+      "Heirloom photographs"
+    ]
+  },
+
+  {
+    id: 6,
+    title: "The Family Gathering",
+    location: "FaceTime",
+    tags: ["home"],
+    image: "",
+    short: "An hour spent catching up with the people who matter most.",
+    description:
+      "A dedicated hour to connect, share stories, and spend time together with Danni, Sarah, Taz, and Zion.",
+    details: [
+      "Danni",
+      "Sarah",
+      "Taz",
+      "Zion",
+      "One hour together"
+    ]
+  },
+
+  {
+    id: 7,
+    title: "An Afternoon by the Water",
+    location: "Poolside",
+    tags: ["out"],
+    image: "",
+    short: "Relaxing poolside with laughter, sunshine, and family.",
+    description:
+      "A simple afternoon enjoying the pool, spending time together, and making memories with Taz.",
+    details: [
+      "Pool time",
+      "Relaxation",
+      "Family time",
+      "Summer memories"
+    ]
   }
 ];
 
@@ -123,7 +187,7 @@ function renderExperiences() {
           </div>
 
           <div class="experience-card__content">
-            <p class="experience-card__meta">${item.date} · ${item.location}</p>
+            <p class="experience-card__meta">${item.location}</p>
             <h3 class="experience-card__title">${item.title}</h3>
             <p>${item.short}</p>
           </div>
@@ -208,7 +272,7 @@ function openModal(item) {
   const modal = document.querySelector(".experience-modal");
 
   modal.querySelector(".experience-modal__image").style.backgroundImage = `url('${item.image}')`;
-  modal.querySelector(".experience-modal__meta").textContent = `${item.date} · ${item.location}`;
+  modal.querySelector(".experience-modal__meta").textContent = item.location;
   modal.querySelector(".experience-modal__title").textContent = item.title;
   modal.querySelector(".experience-modal__description").textContent = item.description;
 
