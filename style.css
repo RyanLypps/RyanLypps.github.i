@@ -1099,6 +1099,26 @@ MOBILE
         kittyRun 12s linear infinite;
 }
 
+@media (max-width: 768px) {
+
+    .kitty-scene {
+        height: 110px;
+        margin-top: 2rem;
+    }
+
+    .kitty-runner {
+        width: 70px;
+        top: 15px;
+    }
+
+    .kitty-bow {
+        font-size: 2rem;
+        top: 20px;
+        right: 30px;
+    }
+
+}
+
 /* =========================================
    ANIMATIONS
 ========================================= */
