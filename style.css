@@ -135,6 +135,11 @@ background: linear-gradient(
     text-align: right;
 }
 
+.days-text {
+    position: relative;
+    top: -0.12em;
+}
+
 /* =========================================
 HERO
 ========================================= */
