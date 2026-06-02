@@ -61,6 +61,10 @@ const experiences = [
   }
 ];
 
+const DEV_IPS = [
+    "24.197.139.5"
+];
+
 const filters = document.querySelectorAll(".filter-pill");
 const grid = document.getElementById("experience-grid");
 const heroButton = document.querySelector(".hero__button");
@@ -69,12 +73,12 @@ const daysRemaining = document.getElementById("daysRemaining");
 
 let activeFilter = "all";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initLenis();
   renderExperiences();
   bindFilters();
   bindHeroButton();
-  initCountdown();
+  await initCountdown();
   initKittyAnimation();
   initMemoryHunt();
   initScrollAnimations();
@@ -238,7 +242,31 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
-function initCountdown() {
+async function initCountdown() {
+
+    try {
+
+        const response =
+            await fetch("https://api.ipify.org?format=json");
+
+        const data =
+            await response.json();
+
+        if (DEV_IPS.includes(data.ip)) {
+
+            const mainContent =
+                document.getElementById("main-content");
+
+            if (mainContent) {
+                mainContent.style.display = "block";
+            }
+
+            return;
+        }
+
+    } catch (e) {
+        console.log("IP check failed");
+    }
 
     const revealDate = new Date(
         "2026-06-10T12:00:00-04:00"
