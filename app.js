@@ -406,7 +406,7 @@ async function initCountdown() {
         document.getElementById(
             "daysRemaining"
         ).innerHTML =
-            `${days}<span> Days</span>`;
+            `<span class="days-value">${days}</span><span class="days-text"> Days</span>`;
 
         const hoursEl =
             document.getElementById("hoursRemaining");
