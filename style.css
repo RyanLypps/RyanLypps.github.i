@@ -535,19 +535,12 @@ COUNTDOWN
 }
 
 .countdown-clock {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 1rem;
-
-    margin-top: 2rem;
-
+    margin-top: 1rem;
     margin-bottom: 1rem;
-
 }
 
 .countdown-unit {
@@ -609,9 +602,7 @@ COUNTDOWN
 @media (max-width: 768px) {
 
     .countdown-clock {
-
         gap: .5rem;
-
     }
 
     .countdown__display {
