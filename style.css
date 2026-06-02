@@ -1107,17 +1107,17 @@ MOBILE
 @media (max-width: 768px) {
 
     .countdown::before {
-        top: 2%;
-        left: -20px;
-        font-size: 2.5rem;
-        opacity: .4;
+        top: 7%;
+        left: 37px;
+        font-size: 3.5rem;
+        opacity: .45;
     }
 
     .countdown::after {
-        top: 2%;
-        right: -20px;
-        font-size: 3rem;
-        opacity: .4;
+        top: 27%;
+        right: 24px;
+        font-size: 4rem;
+        opacity: .45;
     }
 
 }
