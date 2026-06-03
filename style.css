@@ -1194,7 +1194,6 @@ MOBILE
     letter-spacing: .08em;
     text-transform: uppercase;
     transition: 300ms cubic-bezier(.22,1,.36,1);
-    width: 600px;
     text-align:center;
 }
 
@@ -1211,7 +1210,6 @@ MOBILE
     );
     color: white;
     box-shadow: 0 10px 25px rgba(184,154,94,.32);
-    width: 100%;
 }
 
 .experience-card {
