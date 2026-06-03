@@ -72,21 +72,21 @@ const experiences = [
   },
 
   {
-    id: 5,
-    title: "Generations in Bloom",
-    location: "TBD",
-    tags: ["photos"],
-    image: "",
-    short: "A collection of photographs celebrating friendship and family.",
-    description:
-      "A portrait session focused on maternity photographs, mommy-and-me moments, best-friend portraits, and timeless images to treasure for years.",
-    details: [
-      "Maternity portraits",
-      "Mommy & me photos",
-      "Best friend portraits",
-      "Polaroids",
-      "Heirloom photographs"
-    ]
+      id: 5,
+      title: "Generations in Bloom",
+      location: "The Lypps Estate",
+      tags: ["photos"],
+      image: "",
+      short: "A series of heirloom-inspired portraits across five uniquely themed settings.",
+      description:
+        "A full portrait experience moving through five distinct scenes, each with its own atmosphere and story, creating a collection of photographs that feel timeless, whimsical, and deeply personal.",
+      details: [
+        "The Jungle Nursery",
+        "The Baroque Drawing Room",
+        "The Fairy Cove",
+        "The Bamboo Grove & Grand Oak",
+        "The Kawaii Garden Picnic"
+      ]
   },
 
   {
