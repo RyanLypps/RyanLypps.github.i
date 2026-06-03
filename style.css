@@ -301,63 +301,74 @@ color: white;
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
     .filters {
-        overflow: visible;
-        position: sticky;
-        top: 0;
-        z-index: 500;
+        position:sticky;
+        top:0;
+        z-index:500;
+
+        display:flex;
+        justify-content:center;
+
+        overflow:visible;
+        padding:1rem;
     }
 
     .filters__toggle {
-        display: block;
-        width: 100%;
-        padding: 1rem;
-        border-radius: 18px;
-        background: white;
-        color: var(--charcoal);
-        box-shadow: var(--shadow-soft);
-        font-size: .9rem;
-        letter-spacing: .08em;
-        text-transform: uppercase;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        width:70px;
+        height:70px;
+        padding:0;
+
+        border-radius:50%;
+
+        background:rgba(255,255,255,.92);
+        border:1px solid rgba(184,154,94,.28);
+
+        box-shadow:0 18px 50px rgba(0,0,0,.08);
+
+        font-size:1.2rem;
     }
 
     .filters__container {
         position:absolute;
-        top:calc(100% + .75rem);
-        left:1rem;
-        right:1rem;
-    
+
+        top:90px;
+        left:50%;
+
+        width:300px;
+        height:300px;
+
         display:flex !important;
         flex-wrap:wrap;
-        gap:.35rem;
-    
+        align-content:center;
+        justify-content:center;
+        gap:.5rem;
+
         background:rgba(255,255,255,.92);
         backdrop-filter:blur(12px);
-    
+
         border:1px solid rgba(184,154,94,.28);
-        border-radius:999px;
-    
-        padding:.45rem;
-    
+        border-radius:50%;
+
         opacity:0;
         visibility:hidden;
-    
-        transform:translateY(-10px);
-    
-        transition:.25s ease;
-    
-        z-index:999;
 
-        max-width: 300px;
-        height: 300px;
+        transform:translateX(-50%) scale(.9);
+
+        transition:.25s ease;
+
+        z-index:999;
     }
 
     .filters.open .filters__container {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+        opacity:1;
+        visibility:visible;
+        transform:translateX(-50%) scale(1);
     }
 }
 
