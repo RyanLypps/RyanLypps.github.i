@@ -352,52 +352,37 @@ color: white;
 EXPERIENCES
 ========================================= */
 
+.experiences-area {
+    position: relative;
+    padding-bottom: 7rem;
+}
+
 .experiences {
-padding:
-5rem
-1.5rem;
+    padding: 4rem 1.5rem 0;
 }
 
 .experience-grid {
-max-width: var(--max-width);
-
-
-margin: auto;
-
-display: grid;
-
-grid-template-columns:
-    repeat(
-        auto-fit,
-        minmax(320px,1fr)
-    );
-
-gap: 2rem;
-
-
-}
-
-.experience-card__content {
-padding: 1.5rem;
+    max-width: var(--max-width);
+    margin: auto;
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(320px,1fr)
+        );
+    gap: 2rem;
 }
 
 .experience-card__title {
-font-size: 2rem;
+    font-size: 2rem;
 }
 
 .experience-card__meta {
-margin-top: .5rem;
-
-
-color: var(--gold);
-
-text-transform: uppercase;
-
-letter-spacing: .15em;
-
-font-size: .8rem;
-
-
+    margin-top: .5rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .8rem;
 }
 
 /* =========================================
@@ -1208,8 +1193,13 @@ MOBILE
 .experience-card {
     position: relative;
     cursor: pointer;
-    border: 1px solid rgba(184,154,94,.18);
+    overflow: hidden;
+    border-radius: 28px;
+    background: white;
+    border: 1px solid rgba(184,154,94,.22);
+    box-shadow: var(--shadow-soft);
     transform-origin: center;
+    transition: var(--transition);
 }
 
 .experience-card__short {
@@ -1240,11 +1230,10 @@ MOBILE
 }
 
 .experience-card__image {
-    min-height: 100%;
+    height: 260px;
     background-size: cover;
-    background-position: center top;
-    transition:
-        transform .8s cubic-bezier(.22,1,.36,1);
+    background-position: center center;
+    transition: transform .8s cubic-bezier(.22,1,.36,1);
 }
 
 .experience-card:hover .experience-card__image {
@@ -1253,7 +1242,8 @@ MOBILE
 }
 
 .experience-card__content {
-    padding: 1.75rem;
+    padding: 1.6rem 1.7rem 1.75rem;
+    background: white;
 }
 
 .experience-card__badge {
@@ -1276,14 +1266,6 @@ MOBILE
         1px solid rgba(184,154,94,.35);
 }
 
-.experience-card.complete::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(248,244,238,.18);
-    pointer-events: none;
-}
-
 .experience-card__complete,
 .experience-modal__complete {
     margin-top: 1.25rem;
@@ -1303,4 +1285,14 @@ MOBILE
     background: var(--pink);
     color: white;
     transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .experience-card__image {
+        height: 220px;
+    }
+
+    .experiences-area {
+        padding-bottom: 5rem;
+    }
 }
