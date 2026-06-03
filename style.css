@@ -1220,11 +1220,27 @@ MOBILE
     transform-origin: center;
 }
 
+.experience-card__short {
+    margin-top: .75rem;
+    color: rgba(31,31,31,.75);
+    line-height: 1.65;
+}
+
 .experience-card:hover {
-    transform: translateY(-10px) scale(1.015);
+    transform:
+        translateY(-10px)
+        scale(1.015);
     box-shadow:
-        0 28px 70px rgba(0,0,0,.14),
-        0 0 0 1px rgba(184,154,94,.25);
+        0 28px 80px rgba(0,0,0,.15);
+}
+
+.experience-card__status {
+    margin-top: 1.25rem;
+    font-size: .72rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
 }
 
 .experience-card:active {
@@ -1232,7 +1248,20 @@ MOBILE
 }
 
 .experience-card__image {
-    transition: transform 600ms cubic-bezier(.22,1,.36,1);
+    height: 260px;
+    background-size: cover;
+    background-position: center center;
+    transition:
+        transform .8s cubic-bezier(.22,1,.36,1);
+}
+
+.experience-card:hover .experience-card__image {
+    transform:
+        scale(1.06);
+}
+
+.experience-card__content {
+    padding: 1.75rem;
 }
 
 .experience-card:hover .experience-card__image {
@@ -1255,7 +1284,8 @@ MOBILE
 }
 
 .experience-card.complete {
-    border-color: rgba(184,154,94,.45);
+    border:
+        1px solid rgba(184,154,94,.35);
 }
 
 .experience-card.complete::after {
