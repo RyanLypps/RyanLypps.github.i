@@ -136,6 +136,9 @@ const DEV_IPS = [
     "24.197.139.5", "172.59.217.234"
 ];
 
+const filtersToggle =
+    document.querySelector(".filters__toggle");
+
 let completedExperiences =
     JSON.parse(localStorage.getItem("completedExperiences")) || [];
 
@@ -154,6 +157,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindHeroButton();
   await initCountdown();
   initKittyAnimation();
+  initMobileFilters();
   initMemoryHunt();
   initScrollAnimations();
   createModal();
@@ -179,6 +183,20 @@ function initLenis() {
     }
 
     requestAnimationFrame(raf);
+}
+
+function initMobileFilters() {
+
+    if (!filtersToggle) return;
+
+    filtersToggle.addEventListener("click", () => {
+
+        document
+            .querySelector(".filters")
+            .classList
+            .toggle("open");
+
+    });
 }
 
 function renderExperiences() {
@@ -278,6 +296,21 @@ function bindFilters() {
       button.classList.add("active");
 
       activeFilter = button.dataset.filter;
+      const toggle =
+          document.querySelector(".filters__toggle");
+      
+      if (toggle) {
+      
+          toggle.textContent =
+              `✦ ${button.textContent}`;
+      
+      }
+      
+      document
+          .querySelector(".filters")
+          .classList
+          .remove("open");
+      
       renderExperiences();
     });
   });
