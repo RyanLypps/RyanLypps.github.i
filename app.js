@@ -76,7 +76,7 @@ const experiences = [
       title: "Generations in Bloom",
       location: "The Lypps Estate",
       tags: ["estate", "heirloom"],
-      image: "",
+      image: "./images/generations-in-bloom.jpeg",
       short: "A series of heirloom-inspired portraits across five uniquely themed settings.",
       description:
         "A full portrait experience moving through five distinct scenes, each with its own atmosphere and story, creating a collection of photographs that feel timeless, whimsical, and deeply personal.",
