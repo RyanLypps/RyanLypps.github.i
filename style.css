@@ -328,17 +328,20 @@ color: white;
         text-transform: uppercase;
     }
 
-    .filters__container {
-        width: 100%;
-        max-width: 100%;
-        display: none;
-        margin-top: .75rem;
+    filters__container {
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 26px;
     }
 
     .filters.open .filters__container {
         display: grid;
         grid-template-columns: 1fr;
         gap: .5rem;
+    }
+
+    filter-pill {
+        font-size: .68rem;
+        padding: .8rem .6rem;
     }
 
 }
