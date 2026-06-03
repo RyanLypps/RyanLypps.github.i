@@ -196,13 +196,24 @@ function renderExperiences() {
                     ${isComplete ? `<div class="experience-card__badge">✓ Completed</div>` : ""}
 
                     <div class="experience-card__content">
-                        <p class="experience-card__meta">${item.location}</p>
-                        <h3 class="experience-card__title">${item.title}</h3>
-                        <p>${item.short}</p>
-
-                        <button class="experience-card__complete">
-                            ${isComplete ? "Completed" : "Mark Complete"}
-                        </button>
+                        <p class="experience-card__meta">
+                            ${item.location}
+                        </p>
+                    
+                        <h3 class="experience-card__title">
+                            ${item.title}
+                        </h3>
+                    
+                        <p class="experience-card__short">
+                            ${item.short}
+                        </p>
+                    
+                        ${
+                            isComplete
+                            ? `<div class="experience-card__status">✓ Completed</div>`
+                            : `<div class="experience-card__status">○ Planned</div>`
+                        }
+                    
                     </div>
                 </article>
             `;
@@ -216,17 +227,7 @@ function renderExperiences() {
             openModal(experience);
         });
     });
-
-    document.querySelectorAll(".experience-card__complete").forEach(button => {
-        button.addEventListener("click", e => {
-            e.stopPropagation();
-
-            const card = button.closest(".experience-card");
-            const id = Number(card.dataset.id);
-
-            toggleExperienceComplete(id);
-        });
-    });
+  });
 
     if (window.gsap) {
         gsap.fromTo(
