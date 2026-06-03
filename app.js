@@ -126,8 +126,11 @@ const experiences = [
 ];
 
 const DEV_IPS = [
-    "24.197.139.5"
+    "24.197.139.5", "172.59.217.98"
 ];
+
+let completedExperiences =
+    JSON.parse(localStorage.getItem("completedExperiences")) || [];
 
 const filters = document.querySelectorAll(".filter-pill");
 const grid = document.getElementById("experience-grid");
@@ -172,47 +175,93 @@ function initLenis() {
 }
 
 function renderExperiences() {
-  const filtered =
-    activeFilter === "all"
-      ? experiences
-      : experiences.filter(item => item.tags.includes(activeFilter));
+    const filtered =
+        activeFilter === "all"
+            ? experiences
+            : activeFilter === "completed"
+                ? experiences.filter(item => completedExperiences.includes(item.id))
+                : experiences.filter(item => item.tags.includes(activeFilter));
 
-  grid.innerHTML = filtered
-    .map(item => {
-      return `
-        <article class="experience-card" data-id="${item.id}">
-          <div 
-            class="experience-card__image" 
-            style="background-image: url('${item.image}')">
-          </div>
+    grid.innerHTML = filtered
+        .map(item => {
+            const isComplete = completedExperiences.includes(item.id);
 
-          <div class="experience-card__content">
-            <p class="experience-card__meta">${item.location}</p>
-            <h3 class="experience-card__title">${item.title}</h3>
-            <p>${item.short}</p>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
+            return `
+                <article class="experience-card ${isComplete ? "complete" : ""}" data-id="${item.id}">
+                    <div 
+                        class="experience-card__image" 
+                        style="background-image: url('${item.image}')">
+                    </div>
 
-  document.querySelectorAll(".experience-card").forEach(card => {
-    card.addEventListener("click", () => {
-      const id = Number(card.dataset.id);
-      const experience = experiences.find(item => item.id === id);
-      openModal(experience);
+                    ${isComplete ? `<div class="experience-card__badge">✓ Completed</div>` : ""}
+
+                    <div class="experience-card__content">
+                        <p class="experience-card__meta">${item.location}</p>
+                        <h3 class="experience-card__title">${item.title}</h3>
+                        <p>${item.short}</p>
+
+                        <button class="experience-card__complete">
+                            ${isComplete ? "Completed" : "Mark Complete"}
+                        </button>
+                    </div>
+                </article>
+            `;
+        })
+        .join("");
+
+    document.querySelectorAll(".experience-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const id = Number(card.dataset.id);
+            const experience = experiences.find(item => item.id === id);
+            openModal(experience);
+        });
     });
-  });
 
-  if (window.gsap) {
-    gsap.from(".experience-card", {
-      opacity: 0,
-      y: 35,
-      duration: 0.7,
-      stagger: 0.08,
-      ease: "power3.out"
+    document.querySelectorAll(".experience-card__complete").forEach(button => {
+        button.addEventListener("click", e => {
+            e.stopPropagation();
+
+            const card = button.closest(".experience-card");
+            const id = Number(card.dataset.id);
+
+            toggleExperienceComplete(id);
+        });
     });
-  }
+
+    if (window.gsap) {
+        gsap.fromTo(
+            ".experience-card",
+            {
+                opacity: 0,
+                y: 40,
+                scale: 0.96
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                duration: 0.65,
+                stagger: 0.08,
+                ease: "power3.out"
+            }
+        );
+    }
+}
+
+function toggleExperienceComplete(id) {
+    if (completedExperiences.includes(id)) {
+        completedExperiences =
+            completedExperiences.filter(itemId => itemId !== id);
+    } else {
+        completedExperiences.push(id);
+    }
+
+    localStorage.setItem(
+        "completedExperiences",
+        JSON.stringify(completedExperiences)
+    );
+
+    renderExperiences();
 }
 
 function bindFilters() {
@@ -254,6 +303,10 @@ function createModal() {
         <p class="experience-modal__description"></p>
 
         <div class="experience-modal__details"></div>
+
+        <button class="experience-modal__complete">
+            Mark Complete
+        </button>
       </div>
     </div>
   `;
@@ -263,6 +316,12 @@ function createModal() {
   modal.querySelector(".experience-modal__close").addEventListener("click", closeModal);
   modal.querySelector(".experience-modal__backdrop").addEventListener("click", closeModal);
 
+  modal.querySelector(".experience-modal__complete").addEventListener("click", () => {
+    const id = Number(modal.dataset.id);
+    toggleExperienceComplete(id);
+    closeModal();
+});
+
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") closeModal();
   });
@@ -271,6 +330,7 @@ function createModal() {
 function openModal(item) {
   const modal = document.querySelector(".experience-modal");
 
+  modal.dataset.id = item.id;
   modal.querySelector(".experience-modal__image").style.backgroundImage = `url('${item.image}')`;
   modal.querySelector(".experience-modal__meta").textContent = item.location;
   modal.querySelector(".experience-modal__title").textContent = item.title;
@@ -279,6 +339,14 @@ function openModal(item) {
   modal.querySelector(".experience-modal__details").innerHTML = item.details
     .map(detail => `<div class="experience-modal__detail">${detail}</div>`)
     .join("");
+
+  const completeButton =
+    modal.querySelector(".experience-modal__complete");
+
+completeButton.textContent =
+    completedExperiences.includes(item.id)
+        ? "Completed ✓"
+        : "Mark Complete";
 
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
