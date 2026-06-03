@@ -1195,7 +1195,7 @@ MOBILE
     letter-spacing: .08em;
     text-transform: uppercase;
     transition: 300ms cubic-bezier(.22,1,.36,1);
-    width:170px;
+    width: 600px;
     text-align:center;
 }
 
