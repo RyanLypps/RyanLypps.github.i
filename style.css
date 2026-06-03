@@ -1212,9 +1212,9 @@ MOBILE
 }
 
 .experience-card__image {
-    height: 260px;
+    min-height: 100%;
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     transition:
         transform .8s cubic-bezier(.22,1,.36,1);
 }
@@ -1226,10 +1226,6 @@ MOBILE
 
 .experience-card__content {
     padding: 1.75rem;
-}
-
-.experience-card:hover .experience-card__image {
-    transform: scale(1.06);
 }
 
 .experience-card__badge {
