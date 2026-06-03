@@ -133,7 +133,7 @@ const experiences = [
 ];
 
 const DEV_IPS = [
-    "24.197.139.5", "172.59.217.98"
+    "24.197.139.5", "172.59.217.234"
 ];
 
 let completedExperiences =
