@@ -301,6 +301,52 @@ background: var(--gold);
 color: white;
 }
 
+.filters__toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .filters__toggle {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 1rem;
+
+        border-radius: 18px;
+
+        background: white;
+
+        color: var(--charcoal);
+
+        box-shadow: var(--shadow-soft);
+
+        font-size: .9rem;
+
+        letter-spacing: .08em;
+
+        text-transform: uppercase;
+    }
+
+    .filters__container {
+
+        display: none;
+
+        margin-top: .75rem;
+    }
+
+    .filters.open .filters__container {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
 /* =========================================
 EXPERIENCES
 ========================================= */
