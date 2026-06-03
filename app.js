@@ -5,6 +5,7 @@ const experiences = [
     location: "At Home",
     tags: ["estate", "fellowship", "heirloom"],
     image: "",
+    duration: "30 Minutes",
     short: "A slow Southern evening of conversation, snacks, and shared memories.",
     description:
       "An easygoing gathering centered around comfort, laughter, good company, and unhurried conversation.",
@@ -22,6 +23,7 @@ const experiences = [
     location: "Daniel Stowe Botanical Gardens",
     tags: ["town", "heirloom"],
     image: "",
+    duration: "1-2 Hours",
     short: "Garden paths, flowers, wandering, and beautiful photographs.",
     description:
       "A leisurely stroll through blooming gardens, hidden pathways, and peaceful corners perfect for photographs and conversation.",
@@ -39,6 +41,7 @@ const experiences = [
     location: "South End, Charlotte",
     tags: ["town"],
     image: "",
+    duration: "1-2 Hours",
     short: "Shops, cafés, murals, and an afternoon exploring together.",
     description:
       "A relaxed walk through South End enjoying local shops, coffee stops, murals, and the charm of the neighborhood.",
@@ -56,6 +59,7 @@ const experiences = [
     location: "At Home",
     tags: ["estate", "fellowship", "heirloom"],
     image: "",
+    duration: "3-5 Hours",
     short: "Candles, charcuterie, skincare, films, music, and comfort.",
     description:
       "An evening devoted to comfort and connection with candles, skincare, charcuterie, nostalgic films, music, mocktails, blankets, Polaroids, and meaningful conversation.",
@@ -77,6 +81,7 @@ const experiences = [
       location: "The Lypps Estate",
       tags: ["estate", "heirloom"],
       image: "./images/generations-in-bloom.jpeg",
+      duration: "2-3 Hours",
       short: "A series of heirloom-inspired portraits across five uniquely themed settings.",
       description:
         "A full portrait experience moving through five distinct scenes, each with its own atmosphere and story, creating a collection of photographs that feel timeless, whimsical, and deeply personal.",
@@ -95,6 +100,7 @@ const experiences = [
     location: "FaceTime",
     tags: ["heirloom"],
     image: "",
+    duration: "1 Hour",
     short: "An hour spent catching up with the people who matter most.",
     description:
       "A dedicated hour to connect, share stories, and spend time together with Danni, Sarah, Taz, and Zion.",
@@ -113,6 +119,7 @@ const experiences = [
     location: "Poolside",
     tags: ["estate", "heirloom"],
     image: "",
+    duration: "2-3 Hours",
     short: "Relaxing poolside with laughter, sunshine, and family.",
     description:
       "A simple afternoon enjoying the pool, spending time together, and making memories with Taz.",
