@@ -333,7 +333,7 @@ function createModal() {
     <div class="experience-modal__backdrop"></div>
 
     <div class="experience-modal__panel">
-      <button class="experience-modal__close">×</button>
+      <button class="experience-modal__close">✦</button>
 
       <div class="experience-modal__image"></div>
 
@@ -352,6 +352,8 @@ function createModal() {
   `;
 
   document.body.appendChild(modal);
+
+  initModalSwipeClose();
 
   modal.querySelector(".experience-modal__close").addEventListener("click", closeModal);
   modal.querySelector(".experience-modal__backdrop").addEventListener("click", closeModal);
@@ -412,6 +414,56 @@ function closeModal() {
 
   modal.classList.remove("active");
   document.body.style.overflow = "";
+}
+
+function initModalSwipeClose() {
+
+    const modal =
+        document.querySelector(".experience-modal");
+
+    const panel =
+        document.querySelector(".experience-modal__panel");
+
+    if (!modal || !panel) return;
+
+    let startY = 0;
+    let currentY = 0;
+
+    panel.addEventListener("touchstart", e => {
+
+        startY =
+            e.touches[0].clientY;
+
+    }, { passive: true });
+
+    panel.addEventListener("touchmove", e => {
+
+        currentY =
+            e.touches[0].clientY;
+
+        const delta =
+            Math.max(0, currentY - startY);
+
+        panel.style.transform =
+            `translateY(${delta}px)`;
+
+    }, { passive: true });
+
+    panel.addEventListener("touchend", () => {
+
+        const delta =
+            currentY - startY;
+
+        if (delta > 120) {
+
+            closeModal();
+
+        } else {
+
+            panel.style.transform = "";
+
+        }
+    });
 }
 
 async function initCountdown() {
