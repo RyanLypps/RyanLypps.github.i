@@ -1208,18 +1208,6 @@ MOBILE
     box-shadow: 0 10px 25px rgba(184,154,94,.32);
 }
 
-@media (max-width: 768px) {
-    .filters__container {
-        grid-template-columns: repeat(2, 1fr);
-        border-radius: 26px;
-    }
-
-    .filter-pill {
-        font-size: .68rem;
-        padding: .8rem .6rem;
-    }
-}
-
 .experience-card {
     position: relative;
     cursor: pointer;
