@@ -227,7 +227,6 @@ function renderExperiences() {
             openModal(experience);
         });
     });
-  });
 
     if (window.gsap) {
         gsap.fromTo(
