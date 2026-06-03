@@ -441,27 +441,18 @@ function initModalSwipeClose() {
         currentY =
             e.touches[0].clientY;
 
-        const delta =
-            Math.max(0, currentY - startY);
+        const delta = Math.min(0,currentY - startY);
 
-        panel.style.transform =
-            `translateY(${delta}px)`;
+        panel.style.transform = `translateY(${delta}px)`;
 
     }, { passive: true });
 
     panel.addEventListener("touchend", () => {
 
-        const delta =
-            currentY - startY;
+        const delta = startY - currentY;
 
-        if (delta > 120) {
-
+        if(delta > 120){
             closeModal();
-
-        } else {
-
-            panel.style.transform = "";
-
         }
     });
 }
