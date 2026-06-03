@@ -745,8 +745,10 @@ MOBILE
 
 .experience-modal__image {
     min-height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #f8f4ee;
 }
 
 .experience-modal__content {
