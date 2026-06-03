@@ -3,7 +3,7 @@ const experiences = [
     id: 1,
     title: "The Southern Hemp Social",
     location: "At Home",
-    tags: ["home", "food"],
+    tags: ["estate", "fellowship", "heirloom"],
     image: "",
     short: "A slow Southern evening of conversation, snacks, and shared memories.",
     description:
@@ -20,7 +20,7 @@ const experiences = [
     id: 2,
     title: "The Botanical Promenade",
     location: "Daniel Stowe Botanical Gardens",
-    tags: ["out", "photos"],
+    tags: ["town", "heirloom"],
     image: "",
     short: "Garden paths, flowers, wandering, and beautiful photographs.",
     description:
@@ -37,7 +37,7 @@ const experiences = [
     id: 3,
     title: "The Boulevard Stroll",
     location: "South End, Charlotte",
-    tags: ["out"],
+    tags: ["town"],
     image: "",
     short: "Shops, cafés, murals, and an afternoon exploring together.",
     description:
@@ -54,7 +54,7 @@ const experiences = [
     id: 4,
     title: "The Matriarch's Apothecary Hour",
     location: "At Home",
-    tags: ["home", "food"],
+    tags: ["estate", "fellowship", "heirloom"],
     image: "",
     short: "Candles, charcuterie, skincare, films, music, and comfort.",
     description:
@@ -75,7 +75,7 @@ const experiences = [
       id: 5,
       title: "Generations in Bloom",
       location: "The Lypps Estate",
-      tags: ["photos"],
+      tags: ["estate", "heirloom"],
       image: "",
       short: "A series of heirloom-inspired portraits across five uniquely themed settings.",
       description:
@@ -93,7 +93,7 @@ const experiences = [
     id: 6,
     title: "The Family Gathering",
     location: "FaceTime",
-    tags: ["home"],
+    tags: ["heirloom"],
     image: "",
     short: "An hour spent catching up with the people who matter most.",
     description:
@@ -111,7 +111,7 @@ const experiences = [
     id: 7,
     title: "An Afternoon by the Water",
     location: "Poolside",
-    tags: ["out"],
+    tags: ["estate", "heirloom"],
     image: "",
     short: "Relaxing poolside with laughter, sunshine, and family.",
     description:
