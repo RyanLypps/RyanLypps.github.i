@@ -261,7 +261,6 @@ FILTERS
 }
 
 .filters__container {
-    max-width: var(--max-width);
     margin: auto;
     display: flex;
     gap: .75rem;
