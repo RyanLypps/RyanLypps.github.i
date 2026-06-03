@@ -218,7 +218,7 @@ function renderExperiences() {
                         ${
                             isComplete
                             ? `<div class="experience-card__status">✓ Completed</div>`
-                            : `<div class="experience-card__status">○ Planned</div>`
+                            : `<div class="experience-card__status">✦ ${item.duration}</div>`
                         }
                     
                     </div>
