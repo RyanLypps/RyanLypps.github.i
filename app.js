@@ -126,7 +126,115 @@ const experiences = [
       "Relaxation",
       "Summer memories"
     ]
-  }
+  },
+
+  {
+    id: 8,
+    title: "The Antiquarian's Circuit",
+    location: "Anderson County",
+    tags: ["town", "heirloom"],
+    image: "./images/antique-shopping.jpg",
+    duration: "3-5 Hours",
+    short: "A day spent exploring antique shops, hidden treasures, and local favorites.",
+    description:
+      "A leisurely tour through some of the area's most beloved antique stores and destinations, including The Vine, Apple Dumplin, Willows, Standpipe, Haven of Rest, and Bridge Center.",
+    details: [
+      "Antique Hunting",
+      "Local Shops",
+      "Hidden Treasures",
+      "Scenic Drive"
+    ]
+},
+
+{
+    id: 9,
+    title: "The Anderson Promenade",
+    location: "Downtown Anderson",
+    tags: ["town"],
+    image: "./images/downtown-anderson.jpg",
+    duration: "1-2 Hours",
+    short: "A relaxed stroll through the heart of Anderson.",
+    description:
+      "An afternoon exploring downtown Anderson's shops, historic buildings, public spaces, and small-town charm at an unhurried pace.",
+    details: [
+      "Historic Downtown",
+      "Local Shops",
+      "Walking",
+      "Exploration"
+    ]
+},
+
+{
+    id: 10,
+    title: "The Biltmore Excursion",
+    location: "Biltmore Estate",
+    tags: ["town", "heirloom"],
+    image: "./images/biltmore-estate.jpg",
+    duration: "Full Day",
+    short: "A grand day exploring America's largest home and its gardens.",
+    description:
+      "A memorable journey through the Biltmore Estate, featuring historic architecture, beautiful gardens, scenic grounds, and timeless elegance.",
+    details: [
+      "Historic Estate",
+      "Gardens",
+      "Photography",
+      "Exploration"
+    ]
+},
+
+{
+    id: 11,
+    title: "The Matriarch's Grand Supper",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom", "fellowship"],
+    image: "./images/candlelit-dinner.jpg",
+    duration: "2-3 Hours",
+    short: "A candlelit evening of fine dining and conversation.",
+    description:
+      "An official estate dinner illuminated by candlelight, featuring a thoughtfully prepared meal, elegant table settings, meaningful conversation, and timeless Southern hospitality.",
+    details: [
+      "Candlelight",
+      "Formal Dinner",
+      "Conversation",
+      "Estate Tradition"
+    ]
+},
+
+{
+    id: 12,
+    title: "The Matriarch's Tea Service",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/tea-time.jpg",
+    duration: "1-2 Hours",
+    short: "Tea, pastries, conversation, and quiet refinement.",
+    description:
+      "A graceful afternoon tea featuring fine teas, sweet treats, conversation, and a slower pace inspired by classic Southern hospitality.",
+    details: [
+      "Tea Service",
+      "Pastries",
+      "Conversation",
+      "Relaxation"
+    ]
+},
+
+{
+    id: 13,
+    title: "The Croquet Match",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/croquet.jpg",
+    duration: "1-2 Hours",
+    short: "A classic lawn game played beneath the Carolina sky.",
+    description:
+      "An afternoon of friendly competition and laughter on the estate grounds, embracing one of the great traditions of garden gatherings.",
+    details: [
+      "Croquet",
+      "Garden Lawn",
+      "Friendly Competition",
+      "Outdoor Fellowship"
+    ]
+}
 ];
 
 const DEV_IPS = [
