@@ -139,9 +139,6 @@ const DEV_IPS = [
 const filtersToggle =
     document.querySelector(".filters__toggle");
 
-let completedExperiences =
-    JSON.parse(localStorage.getItem("completedExperiences")) || [];
-
 const filters = document.querySelectorAll(".filter-pill");
 const grid = document.getElementById("experience-grid");
 const heroButton = document.querySelector(".hero__button");
@@ -271,20 +268,6 @@ function renderExperiences() {
             }
         );
     }
-}
-
-function toggleExperienceComplete(id) {
-    if (completedExperiences.includes(id)) {
-        completedExperiences =
-            completedExperiences.filter(itemId => itemId !== id);
-    } else {
-        completedExperiences.push(id);
-    }
-
-    localStorage.setItem(
-        "completedExperiences",
-        JSON.stringify(completedExperiences)
-    );
 }
 
 function bindFilters() {
