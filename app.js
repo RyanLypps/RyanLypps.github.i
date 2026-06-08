@@ -58,7 +58,7 @@ const experiences = [
     title: "The Matriarch's Apothecary Hour",
     location: "The Lypps Estate",
     tags: ["estate", "fellowship", "heirloom"],
-    image: "",
+    image: "./images/candle-photo.webp",
     duration: "3-5 Hours",
     short: "Candles, charcuterie, skincare, films, music, and comfort.",
     description:
