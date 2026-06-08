@@ -361,21 +361,33 @@ function createModal() {
   modal.querySelector(".experience-modal__close").addEventListener("click", closeModal);
   modal.querySelector(".experience-modal__backdrop").addEventListener("click", closeModal);
 
-  modal.querySelector(".experience-modal__complete").addEventListener("click", () => {
+  modal.querySelector(".experience-modal__complete").addEventListener("click", e => {
+      e.preventDefault();
+      e.stopPropagation();
+  
       const id = Number(modal.dataset.id);
   
-      toggleExperienceComplete(id);
+      if (completedExperiences.includes(id)) {
+          completedExperiences = completedExperiences.filter(itemId => itemId !== id);
+      } else {
+          completedExperiences.push(id);
+      }
   
-      const completed =
-          completedExperiences.includes(id);
+      localStorage.setItem(
+          "completedExperiences",
+          JSON.stringify(completedExperiences)
+      );
   
-      const button =
-          modal.querySelector(".experience-modal__complete");
+      const button = modal.querySelector(".experience-modal__complete");
+  
+      button.innerHTML = "✓";
   
       button.classList.toggle(
           "completed",
-          completed
+          completedExperiences.includes(id)
       );
+  
+      renderExperiences();
   });
 
   document.addEventListener("keydown", e => {
