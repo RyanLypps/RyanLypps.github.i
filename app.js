@@ -241,7 +241,7 @@ const experiences = [
   title: "The Bradbury Interlude",
   location: "The Bradbury Bistro",
   tags: ["town", "heirloom"],
-  image: "./images/bradbury-bistro.jpg",
+  image: "./images/bradbury-bistro.png",
   duration: "1-2 Hours",
   short: "Coffee, pastries, conversation, and a slower pace.",
   description:
