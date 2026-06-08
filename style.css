@@ -828,21 +828,37 @@ MOBILE
 }
 
 .experience-modal__details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: .75rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
 }
 
 .experience-modal__detail {
-    padding: .9rem 1rem;
-    background: white;
-    border-radius: 16px;
-    box-shadow: var(--shadow-soft);
+    padding:.5rem .75rem;
+
+    background:rgba(255,255,255,.62);
+    border:1px solid rgba(184,154,94,.22);
+    border-radius:999px;
+
+    color:var(--charcoal);
+
+    font-size:.72rem;
+    letter-spacing:.07em;
+    text-transform:uppercase;
+
+    box-shadow:none;
+}
+
+.experience-modal__detail::before {
+    content:"✦ ";
+    color:var(--gold);
 }
 
 .experience-modal__detail:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
+    transform:translateY(-1px);
+    background:rgba(180,110,132,.08);
+    border-color:rgba(180,110,132,.25);
+    box-shadow:none;
 }
 
 /* =========================================
@@ -890,12 +906,14 @@ MOBILE
     }
 
     .experience-modal__details {
-        grid-template-columns: 1fr;
-        gap: .5rem;
+        display:flex;
+        flex-wrap:wrap;
+        gap:.45rem;
     }
-
+    
     .experience-modal__detail {
-        padding: .75rem .85rem;
+        padding:.45rem .65rem;
+        font-size:.66rem;
     }
 
     .experience-modal__complete {
