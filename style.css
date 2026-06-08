@@ -829,46 +829,6 @@ MOBILE
     margin:0;
 }
 
-.experience-modal__complete {
-    position: relative;
-    z-index: 99999;
-
-    width:24px;
-    height:24px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:0;
-
-    border-radius:50%;
-
-    background:transparent;
-    border:1px solid rgba(184,154,94,.3);
-
-    color:var(--gold);
-
-    font-size:.7rem;
-
-    flex-shrink:0;
-}
-
-.experience-modal__panel {
-    position: relative;
-    z-index: 9999;
-}
-
-.experience-modal__complete:hover {
-    transform:scale(1.08);
-}
-
-.experience-modal__complete.completed {
-    background:var(--gold);
-    border-color:var(--gold);
-    color:white;
-}
-
 .experience-modal__title {
     margin-bottom: .75rem;
 }
