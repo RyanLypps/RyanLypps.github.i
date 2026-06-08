@@ -69,9 +69,7 @@ const experiences = [
       "Skincare",
       "Mocktails",
       "Nostalgic films",
-      "Polaroids",
       "Music",
-      "Blankets"
     ]
   },
 
