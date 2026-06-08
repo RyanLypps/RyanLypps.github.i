@@ -349,10 +349,7 @@ function createModal() {
         <p class="experience-modal__description"></p>
 
         <div class="experience-modal__details"></div>
-
-        <button class="experience-modal__complete">
-            Mark Complete
-        </button>
+        
       </div>
     </div>
   `;
