@@ -133,7 +133,7 @@ const experiences = [
     title: "The Antiquarian's Circuit",
     location: "Anderson County",
     tags: ["town", "heirloom"],
-    image: "./images/antique-shopping.jpg",
+    image: "./images/antique-shopping.jpeg",
     duration: "3-5 Hours",
     short: "A day spent exploring antique shops, hidden treasures, and local favorites.",
     description:
