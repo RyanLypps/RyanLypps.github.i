@@ -97,17 +97,17 @@ const experiences = [
     title: "The Reunion Hour",
     location: "FaceTime",
     tags: ["heirloom"],
-    image: "",
+    image: "./images/face-timig.avif",
     duration: "1 Hour",
     short: "An hour spent catching up with the people who matter most.",
     description:
-      "A dedicated hour to connect, share stories, and spend time together with Danni, Sarah, Taz, and Zion. Give Danni notice ahead of time. She asked.",
+      "A dedicated hour to connect, share stories, and spend time together with Danni, Sarah, Taz, and Zion. Give Danni notice ahead of time. Can use my laptop.",
     details: [
       "Danni",
       "Sarah",
       "Taz",
       "Zion",
-      "One hour together"
+      "Mocktails"
     ]
   },
 
