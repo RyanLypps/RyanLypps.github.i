@@ -56,7 +56,7 @@ const experiences = [
   {
     id: 4,
     title: "The Matriarch's Apothecary Hour",
-    location: "At Home",
+    location: "The Lypps Estate",
     tags: ["estate", "fellowship", "heirloom"],
     image: "",
     duration: "3-5 Hours",
