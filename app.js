@@ -391,6 +391,11 @@ function openModal(item) {
   const completeButton =
     modal.querySelector(".experience-modal__complete");
 
+  completeButton.classList.toggle(
+      "completed",
+      completedExperiences.includes(item.id)
+  );
+
 completeButton.textContent =
     completedExperiences.includes(item.id)
         ? "Completed ✓"
