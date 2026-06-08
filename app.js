@@ -2,19 +2,19 @@ const experiences = [
   {
     id: 1,
     title: "The Southern Hemp Social",
-    location: "At Home",
-    tags: ["estate", "fellowship", "heirloom"],
+    location: "Any Dispensary",
+    tags: ["estate"],
     image: "./images/weed-leaf.jpg",
     duration: "30 Minutes",
-    short: "A slow Southern evening of conversation, snacks, and shared memories.",
+    short: "A quick excursion for provisions, fresh air, and good company.",
     description:
-      "An easygoing gathering centered around comfort, laughter, good company, and unhurried conversation.",
+      "A brief trip to a local dispensary to pick up provisions, enjoy the drive, and return ready for an evening of fellowship.",
     details: [
-      "Conversation",
-      "Relaxation",
-      "Snacks & treats",
-      "Time together"
-    ]
+      "Dispensary Hunt",
+      "Blunt Selection",
+      "Scenic Drive",
+      "Good Company"
+  ]
   },
 
   {
