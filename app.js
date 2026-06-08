@@ -4,7 +4,7 @@ const experiences = [
     title: "The Southern Hemp Social",
     location: "At Home",
     tags: ["estate", "fellowship", "heirloom"],
-    image: "",
+    image: "./images/weed-leaf.jpg",
     duration: "30 Minutes",
     short: "A slow Southern evening of conversation, snacks, and shared memories.",
     description:
