@@ -818,6 +818,49 @@ MOBILE
     margin-bottom: .75rem;
 }
 
+.experience-modal__meta-row {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    margin-bottom:.75rem;
+}
+
+.experience-modal__meta {
+    margin:0;
+}
+
+.experience-modal__complete {
+    width:32px;
+    height:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:rgba(184,154,94,.12);
+    border:1px solid rgba(184,154,94,.25);
+
+    color:var(--gold);
+
+    font-size:.85rem;
+
+    transition:var(--transition);
+}
+
+.experience-modal__complete:hover {
+    transform:scale(1.08);
+}
+
+.experience-modal__complete.completed {
+    background:var(--gold);
+    color:white;
+}
+
 .experience-modal__title {
     margin-bottom: .75rem;
 }
