@@ -116,7 +116,7 @@ const experiences = [
     title: "An Afternoon by the Water",
     location: "KOA Public Pool",
     tags: ["town", "heirloom"],
-    image: ".images/pink-pool.jpg",
+    image: "./images/pink-pool.jpg",
     duration: "2-3 Hours",
     short: "Relaxing poolside with laughter, sunshine, and family.",
     description:
