@@ -285,8 +285,6 @@ function toggleExperienceComplete(id) {
         "completedExperiences",
         JSON.stringify(completedExperiences)
     );
-
-    renderExperiences();
 }
 
 function bindFilters() {
@@ -367,27 +365,15 @@ function createModal() {
   
       const id = Number(modal.dataset.id);
   
-      if (completedExperiences.includes(id)) {
-          completedExperiences = completedExperiences.filter(itemId => itemId !== id);
-      } else {
-          completedExperiences.push(id);
-      }
+      toggleExperienceComplete(id);
   
-      localStorage.setItem(
-          "completedExperiences",
-          JSON.stringify(completedExperiences)
-      );
-  
-      const button = modal.querySelector(".experience-modal__complete");
-  
-      button.innerHTML = "✓";
+      const button =
+          modal.querySelector(".experience-modal__complete");
   
       button.classList.toggle(
           "completed",
           completedExperiences.includes(id)
       );
-  
-      renderExperiences();
   });
 
   document.addEventListener("keydown", e => {
