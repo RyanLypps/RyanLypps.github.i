@@ -22,7 +22,7 @@ const experiences = [
     title: "The Botanical Promenade",
     location: "Daniel Stowe Botanical Gardens",
     tags: ["town", "heirloom"],
-    image: "",
+    image: "./images/garden-walk.jpg",
     duration: "1-2 Hours",
     short: "Garden paths, flowers, wandering, and beautiful photographs.",
     description:
