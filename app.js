@@ -338,10 +338,6 @@ function createModal() {
       <div class="experience-modal__content">
         <div class="experience-modal__meta-row">
             <p class="experience-modal__meta"></p>
-        
-            <button class="experience-modal__complete">
-                ✓
-            </button>
         </div>
         <h2 class="experience-modal__title"></h2>
         <p class="experience-modal__description"></p>
@@ -358,28 +354,6 @@ function createModal() {
 
   modal.querySelector(".experience-modal__close").addEventListener("click", closeModal);
   modal.querySelector(".experience-modal__backdrop").addEventListener("click", closeModal);
-
-  modal.querySelector(".experience-modal__complete").addEventListener("click", e => {
-      e.preventDefault();
-      e.stopPropagation();
-  
-      const id = Number(modal.dataset.id);
-  
-      toggleExperienceComplete(id);
-  
-      const isCompleted =
-          completedExperiences.includes(id);
-  
-      e.currentTarget.classList.toggle(
-          "completed",
-          isCompleted
-      );
-  
-      localStorage.setItem(
-          "completedExperiences",
-          JSON.stringify(completedExperiences)
-      );
-  });
 
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") closeModal();
@@ -398,16 +372,6 @@ function openModal(item) {
   modal.querySelector(".experience-modal__details").innerHTML = item.details
     .map(detail => `<div class="experience-modal__detail">${detail}</div>`)
     .join("");
-
-  const completeButton =
-    modal.querySelector(".experience-modal__complete");
-
-    completeButton.classList.toggle(
-      "completed",
-      completedExperiences.includes(item.id)
-  );
-    
-  completeButton.innerHTML = "✓";
 
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
