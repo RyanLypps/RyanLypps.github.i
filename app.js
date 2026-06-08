@@ -205,7 +205,7 @@ const experiences = [
     title: "The Matriarch's Tea Service",
     location: "The Lypps Estate",
     tags: ["estate", "heirloom"],
-    image: "./images/tea-time.jpg",
+    image: "./images/tea-time.webp",
     duration: "1-2 Hours",
     short: "Tea, pastries, conversation, and quiet refinement.",
     description:
