@@ -830,6 +830,9 @@ MOBILE
 }
 
 .experience-modal__complete {
+    position: relative;
+    z-index: 99999;
+
     width:24px;
     height:24px;
 
@@ -849,6 +852,11 @@ MOBILE
     font-size:.7rem;
 
     flex-shrink:0;
+}
+
+.experience-modal__panel {
+    position: relative;
+    z-index: 9999;
 }
 
 .experience-modal__complete:hover {
