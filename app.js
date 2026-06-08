@@ -1,7 +1,7 @@
 const experiences = [
   {
     id: 1,
-    title: "The Southern Hemp Social",
+    title: "The Southern Hemp Social, Anderson",
     location: "Any Dispensary",
     tags: ["estate"],
     image: "./images/weed-leaf.jpg",
@@ -20,7 +20,7 @@ const experiences = [
   {
     id: 2,
     title: "The Botanical Promenade",
-    location: "Daniel Stowe Botanical Gardens",
+    location: "Daniel Stowe Botanical Gardens, Charlotte",
     tags: ["town", "heirloom"],
     image: "./images/garden-walk.jpg",
     duration: "1-2 Hours",
@@ -95,7 +95,7 @@ const experiences = [
   {
     id: 6,
     title: "The Reunion Hour",
-    location: "FaceTime",
+    location: "FaceTime at The Lypps Estate",
     tags: ["heirloom"],
     image: "./images/face-timig.avif",
     duration: "1 Hour",
@@ -114,7 +114,7 @@ const experiences = [
   {
     id: 7,
     title: "An Afternoon by the Water",
-    location: "KOA Public Pool",
+    location: "KOA Public Pool, Anderson",
     tags: ["town", "heirloom"],
     image: "./images/pink-pool.jpg",
     duration: "2-3 Hours",
@@ -167,7 +167,7 @@ const experiences = [
 {
     id: 10,
     title: "The Biltmore Excursion",
-    location: "Biltmore Estate",
+    location: "Biltmore Estate, Asheville",
     tags: ["town", "heirloom"],
     image: "./images/biltmore-estate.avif",
     duration: "Full Day",
