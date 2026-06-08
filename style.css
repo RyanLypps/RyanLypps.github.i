@@ -378,9 +378,11 @@ color: white;
     }
 
     .filters.open .filters__container {
-        opacity:1;
+        opacity:1 !important;
         visibility:visible;
         transform:translateX(-50%) scale(1);
+    
+        background:white;
     }
 }
 
