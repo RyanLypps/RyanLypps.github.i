@@ -362,12 +362,11 @@ function createModal() {
   modal.querySelector(".experience-modal__complete").addEventListener("click", e => {
       e.preventDefault();
       e.stopPropagation();
+      e.stopImmediatePropagation();
   
       const id = Number(modal.dataset.id);
   
       toggleExperienceComplete(id);
-  
-      renderExperiences(); // <- add this
   
       const button =
           modal.querySelector(".experience-modal__complete");
@@ -376,6 +375,20 @@ function createModal() {
           "completed",
           completedExperiences.includes(id)
       );
+  
+      const card =
+          document.querySelector(
+              `.experience-card[data-id="${id}"]`
+          );
+  
+      if (card) {
+          card.classList.toggle(
+              "complete",
+              completedExperiences.includes(id)
+          );
+      }
+  
+      return false;
   });
 
   document.addEventListener("keydown", e => {
