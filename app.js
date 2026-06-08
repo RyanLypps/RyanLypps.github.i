@@ -234,7 +234,62 @@ const experiences = [
       "Friendly Competition",
       "Outdoor Fellowship"
     ]
+},
+
+{
+  id: 14,
+  title: "The Bradbury Interlude",
+  location: "The Bradbury Bistro",
+  tags: ["town", "heirloom"],
+  image: "./images/bradbury-bistro.jpg",
+  duration: "1-2 Hours",
+  short: "Coffee, pastries, conversation, and a slower pace.",
+  description:
+    "A charming visit to Bradbury Bistro for coffee, tea, pastries, and conversation in one of Anderson's most inviting gathering places.",
+  details: [
+    "Coffee",
+    "Pastries",
+    "Conversation",
+    "Downtown Charm"
+  ]
+},
+
+{
+  id: 15,
+  title: "The Scot-Irish Supper",
+  location: "McGee's Scot-Irish Pub",
+  tags: ["town", "fellowship"],
+  image: "./images/mcgees-pub.jpg",
+  duration: "1-2 Hours",
+  short: "A hearty meal, good company, and a touch of Celtic tradition.",
+  description:
+    "An evening spent enjoying classic pub fare, conversation, and the warm atmosphere of one of Anderson's most beloved gathering places.",
+  details: [
+    "Pub Fare",
+    "Conversation",
+    "Local Tradition",
+    "Evening Out"
+  ]
+},
+
+{
+    id: 16,
+    title: "Above the Electric City",
+    location: "UP on the Roof",
+    tags: ["town", "heirloom"],
+    image: "./images/up-on-the-roof.jpg",
+    duration: "1-2 Hours",
+    short: "Panoramic views, fresh air, and a beautiful Anderson afternoon.",
+    description:
+      "A visit to Anderson's rooftop destination to enjoy sweeping views of the city, conversation, and a memorable perspective of the Electric City.",
+    details: [
+      "Rooftop Views",
+      "City Skyline",
+      "Conversation",
+      "Beautiful Weather"
+    ]
 }
+  
 ];
 
 const DEV_IPS = [
