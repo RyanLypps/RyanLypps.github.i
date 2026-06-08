@@ -198,15 +198,15 @@ function initMobileFilters() {
 
 function renderExperiences() {
     const filtered =
-        activeFilter === "all"
-            ? experiences
-            : activeFilter === "completed"
-                ? experiences.filter(item => completedExperiences.includes(item.id))
-                : experiences.filter(item => item.tags.includes(activeFilter));
+      activeFilter === "all"
+          ? experiences
+          : experiences.filter(item =>
+              item.tags.includes(activeFilter)
+          );
 
     grid.innerHTML = filtered
         .map(item => {
-            const isComplete = completedExperiences.includes(item.id);
+            const isComplete = false;
 
             return `
                 <article class="experience-card ${isComplete ? "complete" : ""}" data-id="${item.id}">
@@ -214,8 +214,6 @@ function renderExperiences() {
                         class="experience-card__image" 
                         style="background-image: url('${item.image}')">
                     </div>
-
-                    ${isComplete ? `<div class="experience-card__badge">✓ Completed</div>` : ""}
 
                     <div class="experience-card__content">
                         <p class="experience-card__meta">
@@ -230,11 +228,9 @@ function renderExperiences() {
                             ${item.short}
                         </p>
                     
-                        ${
-                            isComplete
-                            ? `<div class="experience-card__status">✓ Completed</div>`
-                            : `<div class="experience-card__status">✦ ${item.duration}</div>`
-                        }
+                        <div class="experience-card__status">
+                            ✦ ${item.duration}
+                        </div>
                     
                     </div>
                 </article>
