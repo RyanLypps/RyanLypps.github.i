@@ -338,7 +338,13 @@ function createModal() {
       <div class="experience-modal__image"></div>
 
       <div class="experience-modal__content">
-        <p class="experience-modal__meta"></p>
+        <div class="experience-modal__meta-row">
+            <p class="experience-modal__meta"></p>
+        
+            <button class="experience-modal__complete">
+                ✓
+            </button>
+        </div>
         <h2 class="experience-modal__title"></h2>
         <p class="experience-modal__description"></p>
 
