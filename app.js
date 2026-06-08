@@ -362,33 +362,23 @@ function createModal() {
   modal.querySelector(".experience-modal__complete").addEventListener("click", e => {
       e.preventDefault();
       e.stopPropagation();
-      e.stopImmediatePropagation();
   
       const id = Number(modal.dataset.id);
   
       toggleExperienceComplete(id);
   
-      const button =
-          modal.querySelector(".experience-modal__complete");
+      const isCompleted =
+          completedExperiences.includes(id);
   
-      button.classList.toggle(
+      e.currentTarget.classList.toggle(
           "completed",
-          completedExperiences.includes(id)
+          isCompleted
       );
   
-      const card =
-          document.querySelector(
-              `.experience-card[data-id="${id}"]`
-          );
-  
-      if (card) {
-          card.classList.toggle(
-              "complete",
-              completedExperiences.includes(id)
-          );
-      }
-  
-      return false;
+      localStorage.setItem(
+          "completedExperiences",
+          JSON.stringify(completedExperiences)
+      );
   });
 
   document.addEventListener("keydown", e => {
@@ -413,9 +403,9 @@ function openModal(item) {
     modal.querySelector(".experience-modal__complete");
 
     completeButton.classList.toggle(
-        "completed",
-        completedExperiences.includes(item.id)
-    );
+      "completed",
+      completedExperiences.includes(item.id)
+  );
     
   completeButton.innerHTML = "✓";
 
