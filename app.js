@@ -169,7 +169,7 @@ const experiences = [
     title: "The Biltmore Excursion",
     location: "Biltmore Estate",
     tags: ["town", "heirloom"],
-    image: "./images/biltmore-estate.jpg",
+    image: "./images/biltmore-estate.avif",
     duration: "Full Day",
     short: "A grand day exploring America's largest home and its gardens.",
     description:
