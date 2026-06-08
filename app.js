@@ -40,7 +40,7 @@ const experiences = [
     title: "The Boulevard Stroll",
     location: "South End, Charlotte",
     tags: ["town"],
-    image: "",
+    image: "./images/south-end.jpg",
     duration: "1-2 Hours",
     short: "Shops, cafés, murals, and an afternoon exploring together.",
     description:
