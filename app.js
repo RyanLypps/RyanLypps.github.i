@@ -114,17 +114,16 @@ const experiences = [
   {
     id: 7,
     title: "An Afternoon by the Water",
-    location: "Poolside",
-    tags: ["estate", "heirloom"],
-    image: "",
+    location: "KOA Public Pool",
+    tags: ["town", "heirloom"],
+    image: ".images/pink-pool.jpg",
     duration: "2-3 Hours",
     short: "Relaxing poolside with laughter, sunshine, and family.",
     description:
-      "A simple afternoon enjoying the pool, spending time together, and making memories with Taz.",
+      "A simple afternoon enjoying the pool, spending time together, and making memories together. Only during weekdays, 5 dollats entry.",
     details: [
       "Pool time",
       "Relaxation",
-      "Family time",
       "Summer memories"
     ]
   }
