@@ -367,6 +367,8 @@ function createModal() {
   
       toggleExperienceComplete(id);
   
+      renderExperiences(); // <- add this
+  
       const button =
           modal.querySelector(".experience-modal__complete");
   
