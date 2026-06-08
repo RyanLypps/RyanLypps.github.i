@@ -362,10 +362,21 @@ function createModal() {
   modal.querySelector(".experience-modal__backdrop").addEventListener("click", closeModal);
 
   modal.querySelector(".experience-modal__complete").addEventListener("click", () => {
-    const id = Number(modal.dataset.id);
-    toggleExperienceComplete(id);
-    closeModal();
-});
+      const id = Number(modal.dataset.id);
+  
+      toggleExperienceComplete(id);
+  
+      const completed =
+          completedExperiences.includes(id);
+  
+      const button =
+          modal.querySelector(".experience-modal__complete");
+  
+      button.classList.toggle(
+          "completed",
+          completed
+      );
+  });
 
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") closeModal();
