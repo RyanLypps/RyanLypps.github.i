@@ -393,10 +393,7 @@ function openModal(item) {
         completedExperiences.includes(item.id)
     );
     
-    completeButton.textContent =
-        completedExperiences.includes(item.id)
-            ? "✓"
-            : "";
+  completeButton.innerHTML = "✓";
 
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
