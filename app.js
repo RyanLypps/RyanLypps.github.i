@@ -151,7 +151,7 @@ const experiences = [
     title: "The Anderson Promenade",
     location: "Downtown Anderson",
     tags: ["town"],
-    image: "./images/downtown-anderson.jpg",
+    image: "./images/downtown-anderson.webp",
     duration: "1-2 Hours",
     short: "A relaxed stroll through the heart of Anderson.",
     description:
