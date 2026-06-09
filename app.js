@@ -14,7 +14,7 @@ const experiences = [
       "Blunt Selection",
       "Scenic Drive",
       "Good Company"
-  ]
+    ]
   },
 
   {
@@ -74,22 +74,22 @@ const experiences = [
   },
 
   {
-      id: 5,
-      title: "Generations in Bloom",
-      location: "The Lypps Estate",
-      tags: ["estate", "heirloom"],
-      image: "./images/generations-in-bloom.jpeg",
-      duration: "2-3 Hours",
-      short: "A series of heirloom-inspired portraits across five uniquely themed settings.",
-      description:
-        "A full portrait experience moving through five distinct scenes, each with its own atmosphere and story, creating a collection of photographs that feel timeless, whimsical, and deeply personal.",
-      details: [
-        "The Jungle Nursery",
-        "The Baroque Drawing Room",
-        "The Fairy Cove",
-        "The Bamboo Grove & Grand Oak",
-        "The Kawaii Garden Picnic"
-      ]
+    id: 5,
+    title: "Generations in Bloom",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/generations-in-bloom.jpeg",
+    duration: "2-3 Hours",
+    short: "A series of heirloom-inspired portraits across five uniquely themed settings.",
+    description:
+      "A full portrait experience moving through five distinct scenes, each with its own atmosphere and story, creating a collection of photographs that feel timeless, whimsical, and deeply personal.",
+    details: [
+      "The Jungle Nursery",
+      "The Baroque Drawing Room",
+      "The Fairy Cove",
+      "The Bamboo Grove & Grand Oak",
+      "The Kawaii Garden Picnic"
+    ]
   },
 
   {
@@ -144,9 +144,9 @@ const experiences = [
       "Hidden Treasures",
       "Scenic Drive"
     ]
-},
+  },
 
-{
+  {
     id: 9,
     title: "The Anderson Promenade",
     location: "Downtown Anderson",
@@ -162,9 +162,9 @@ const experiences = [
       "Walking",
       "Exploration"
     ]
-},
+  },
 
-{
+  {
     id: 10,
     title: "The Biltmore Excursion",
     location: "Biltmore Estate, Asheville",
@@ -180,9 +180,9 @@ const experiences = [
       "Photography",
       "Exploration"
     ]
-},
+  },
 
-{
+  {
     id: 11,
     title: "The Matriarch's Grand Supper",
     location: "The Lypps Estate",
@@ -198,9 +198,9 @@ const experiences = [
       "Conversation",
       "Estate Tradition"
     ]
-},
+  },
 
-{
+  {
     id: 12,
     title: "The Matriarch's Tea Service",
     location: "The Lypps Estate",
@@ -216,63 +216,63 @@ const experiences = [
       "Conversation",
       "Relaxation"
     ]
-},
+  },
 
-// {
-//     id: 13,
-//     title: "The Croquet Match",
-//     location: "The Lypps Estate",
-//     tags: ["estate", "heirloom"],
-//     image: "./images/croquet.jpg",
-//     duration: "1-2 Hours",
-//     short: "A classic lawn game played beneath the Carolina sky.",
-//     description:
-//       "An afternoon of friendly competition and laughter on the estate grounds, embracing one of the great traditions of garden gatherings.",
-//     details: [
-//       "Croquet",
-//       "Garden Lawn",
-//       "Friendly Competition",
-//       "Outdoor Fellowship"
-//     ]
-// },
+  // {
+  //     id: 13,
+  //     title: "The Croquet Match",
+  //     location: "The Lypps Estate",
+  //     tags: ["estate", "heirloom"],
+  //     image: "./images/croquet.jpg",
+  //     duration: "1-2 Hours",
+  //     short: "A classic lawn game played beneath the Carolina sky.",
+  //     description:
+  //       "An afternoon of friendly competition and laughter on the estate grounds, embracing one of the great traditions of garden gatherings.",
+  //     details: [
+  //       "Croquet",
+  //       "Garden Lawn",
+  //       "Friendly Competition",
+  //       "Outdoor Fellowship"
+  //     ]
+  // },
 
-{
-  id: 14,
-  title: "The Bradbury Interlude",
-  location: "The Bradbury Bistro",
-  tags: ["town", "heirloom"],
-  image: "./images/bradbury-bistro.png",
-  duration: "1-2 Hours",
-  short: "Coffee, pastries, conversation, and a slower pace.",
-  description:
-    "A charming visit to Bradbury Bistro for coffee, tea, pastries, and conversation in one of Anderson's most inviting gathering places.",
-  details: [
-    "Coffee",
-    "Pastries",
-    "Conversation",
-    "Downtown Charm"
-  ]
-},
+  {
+    id: 14,
+    title: "The Bradbury Interlude",
+    location: "The Bradbury Bistro",
+    tags: ["town", "heirloom"],
+    image: "./images/bradbury-bistro.png",
+    duration: "1-2 Hours",
+    short: "Coffee, pastries, conversation, and a slower pace.",
+    description:
+      "A charming visit to Bradbury Bistro for coffee, tea, pastries, and conversation in one of Anderson's most inviting gathering places.",
+    details: [
+      "Coffee",
+      "Pastries",
+      "Conversation",
+      "Downtown Charm"
+    ]
+  },
 
-{
-  id: 15,
-  title: "The Scot-Irish Supper",
-  location: "McGee's Scot-Irish Pub",
-  tags: ["town", "fellowship"],
-  image: "./images/mcgees-pub.jpg",
-  duration: "1-2 Hours",
-  short: "A hearty meal, good company, and a touch of Celtic tradition.",
-  description:
-    "An evening spent enjoying classic pub fare, conversation, and the warm atmosphere of one of Anderson's most beloved gathering places.",
-  details: [
-    "Pub Fare",
-    "Conversation",
-    "Local Tradition",
-    "Evening Out"
-  ]
-},
+  {
+    id: 15,
+    title: "The Scot-Irish Supper",
+    location: "McGee's Scot-Irish Pub",
+    tags: ["town", "fellowship"],
+    image: "./images/mcgees-pub.jpg",
+    duration: "1-2 Hours",
+    short: "A hearty meal, good company, and a touch of Celtic tradition.",
+    description:
+      "An evening spent enjoying classic pub fare, conversation, and the warm atmosphere of one of Anderson's most beloved gathering places.",
+    details: [
+      "Pub Fare",
+      "Conversation",
+      "Local Tradition",
+      "Evening Out"
+    ]
+  },
 
-{
+  {
     id: 16,
     title: "Above the Electric City",
     location: "UP on the Roof",
@@ -288,7 +288,7 @@ const experiences = [
       "Conversation",
       "Beautiful Weather"
     ]
-},
+  },
 
   {
     id: 17,
@@ -306,9 +306,9 @@ const experiences = [
       "Conversation",
       "Fellowship"
     ]
-},
+  },
 
-{
+  {
     id: 18,
     title: "The Cantina Gathering",
     location: "El Arriero Downtown",
@@ -324,9 +324,9 @@ const experiences = [
       "Conversation",
       "Celebration"
     ]
-},
+  },
 
-{
+  {
     id: 19,
     title: "The Culinary Tour of Anderson",
     location: "Anderson County",
@@ -342,9 +342,9 @@ const experiences = [
       "Culinary Exploration",
       "Shared Meals"
     ]
-},
+  },
 
-{
+  {
     id: 20,
     title: "The Metropolitan Supper",
     location: "Sullivan's Metropolitan Grill",
@@ -360,9 +360,9 @@ const experiences = [
       "Conversation",
       "Evening Out"
     ]
-},
+  },
 
-{
+  {
     id: 21,
     title: "The Barnwood Feast",
     location: "The Barnwood Grill & Market",
@@ -378,9 +378,9 @@ const experiences = [
       "Local Favorite",
       "Conversation"
     ]
-},
+  },
 
-{
+  {
     id: 22,
     title: "An Evening on Main",
     location: "Raines on Main",
@@ -396,9 +396,9 @@ const experiences = [
       "Conversation",
       "Evening Fellowship"
     ]
-},
+  },
 
-{
+  {
     id: 23,
     title: "The Breakfast Society",
     location: "Mr. Rivers Breakfast Joint",
@@ -414,9 +414,9 @@ const experiences = [
       "Morning Fellowship",
       "Local Favorite"
     ]
-},
+  },
 
-{
+  {
     id: 24,
     title: "The Sushi Excursion",
     location: "Maki Sushi Bar & Bistro",
@@ -432,9 +432,9 @@ const experiences = [
       "Conversation",
       "Evening Out"
     ]
-},
+  },
 
-{
+  {
     id: 25,
     title: "The Rooftop Sunset",
     location: "UP on the Roof",
@@ -450,9 +450,9 @@ const experiences = [
       "Conversation",
       "City Skyline"
     ]
-},
+  },
 
-{
+  {
     id: 26,
     title: "The Sweet Tooth Society",
     location: "Any Ice Cream Shop",
@@ -468,9 +468,9 @@ const experiences = [
       "Conversation",
       "Stroll"
     ]
-},
+  },
 
-{
+  {
     id: 27,
     title: "The Bookshop Ramble",
     location: "Any Bookstore",
@@ -486,9 +486,9 @@ const experiences = [
       "Recommendations",
       "Hidden Treasures"
     ]
-},
+  },
 
-{
+  {
     id: 28,
     title: "The Antiquarian's Hunt",
     location: "Any Antique Shop",
@@ -504,9 +504,9 @@ const experiences = [
       "History",
       "Exploration"
     ]
-},
+  },
 
-{
+  {
     id: 29,
     title: "The Music & Merriment Society",
     location: "The Lypps Estate",
@@ -522,9 +522,9 @@ const experiences = [
       "Conversation",
       "Laughter"
     ]
-},
+  },
 
-{
+  {
     id: 30,
     title: "The Veranda Retreat",
     location: "The Lypps Estate",
@@ -540,9 +540,9 @@ const experiences = [
       "Conversation",
       "Relaxation"
     ]
-},
+  },
 
-{
+  {
     id: 31,
     title: "An Introduction to Fuji-San",
     location: "The Lypps Estate",
@@ -558,9 +558,9 @@ const experiences = [
       "Estate Tradition",
       "Photo Opportunity"
     ]
-},
+  },
 
-{
+  {
     id: 32,
     title: "The Vintner's Hour",
     location: "The Lypps Estate",
@@ -576,9 +576,9 @@ const experiences = [
       "Relaxation",
       "Fellowship"
     ]
-},
+  },
 
-{
+  {
     id: 33,
     title: "The Feline Drawing Room",
     location: "The Lypps Estate",
@@ -594,9 +594,9 @@ const experiences = [
       "Playtime",
       "Photo Opportunities"
     ]
-},
+  },
 
-{
+  {
     id: 34,
     title: "The Grand Tour of Anderson",
     location: "Anderson County",
@@ -612,9 +612,9 @@ const experiences = [
       "Local Landmarks",
       "Electric City"
     ]
-},
+  },
 
-{
+  {
     id: 35,
     title: "The Estate Picnic",
     location: "The Lypps Estate",
@@ -630,9 +630,9 @@ const experiences = [
       "Conversation",
       "Relaxation"
     ]
-},
+  },
 
-{
+  {
     id: 36,
     title: "The Hartwell Excursion",
     location: "Lake Hartwell",
@@ -648,9 +648,9 @@ const experiences = [
       "Relaxation",
       "Photography"
     ]
-},
+  },
 
-{
+  {
     id: 37,
     title: "The Bubble Garden",
     location: "The Lypps Estate",
@@ -666,16 +666,142 @@ const experiences = [
       "Laughter",
       "Photos"
     ]
+  },
+
+  {
+    id: 38,
+    title: "The Little Artist's Studio",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/little-artist.jpg",
+    duration: "30-60 Minutes",
+    short: "Paint, color, create, and make a mess of memories.",
+    description:
+      "An afternoon of creativity where Zion can color, paint, draw, and create keepsakes worthy of display throughout the estate.",
+    details: [
+      "Arts & Crafts",
+      "Creativity",
+      "Keepsakes",
+      "Zion"
+    ]
+  },
+
+  {
+    id: 39,
+    title: "The Little Ballroom",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/dance-party.jpg",
+    duration: "30-60 Minutes",
+    short: "Music, dancing, laughter, and tiny feet in motion.",
+    description:
+      "A cheerful gathering filled with music and dancing as Zion twirls, wiggles, and enjoys a grand estate dance party.",
+    details: [
+      "Music",
+      "Dancing",
+      "Laughter",
+      "Zion"
+    ]
+  },
+
+  {
+    id: 40,
+    title: "The Storybook Society",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/storybook.jpg",
+    duration: "30-60 Minutes",
+    short: "Stories, imagination, and quiet moments together.",
+    description:
+      "A cozy reading hour spent exploring favorite stories, turning pages, and sharing adventures from faraway lands.",
+    details: [
+      "Storybooks",
+      "Imagination",
+      "Reading",
+      "Togetherness"
+    ]
+  },
+
+  {
+    id: 41,
+    title: "The Pajama Society",
+    location: "The Lypps Estate",
+    tags: ["estate", "fellowship"],
+    image: "./images/pajama-day.jpg",
+    duration: "All Day",
+    short: "Pajamas, snacks, films, and absolutely no obligations.",
+    description:
+      "A day dedicated to comfort, featuring pajamas, favorite snacks, movies, blankets, and the freedom to enjoy the estate at the slowest possible pace.",
+    details: [
+      "Pajamas",
+      "Snacks",
+      "Films",
+      "Relaxation"
+    ]
+},
+
+{
+    id: 42,
+    title: "The Morning Coffee Club",
+    location: "The Lypps Estate",
+    tags: ["estate", "fellowship"],
+    image: "./images/morning-coffee.jpg",
+    duration: "1-2 Hours",
+    short: "Coffee, conversation, and nowhere to be.",
+    description:
+      "A slow Southern morning spent enjoying coffee, sharing stories, and watching the day begin without any schedule to follow.",
+    details: [
+      "Coffee",
+      "Conversation",
+      "Slow Morning",
+      "Comfort"
+    ]
+},
+
+{
+    id: 43,
+    title: "The Porch Swing Fellowship",
+    location: "The Lypps Estate",
+    tags: ["estate", "fellowship", "heirloom"],
+    image: "./images/porch-swing.jpg",
+    duration: "1-3 Hours",
+    short: "Fresh air, gentle conversation, and a slower pace of life.",
+    description:
+      "An afternoon spent on the porch swing enjoying the breeze, reflecting on old memories, and sharing unhurried conversation.",
+    details: [
+      "Porch Swing",
+      "Fresh Air",
+      "Conversation",
+      "Relaxation"
+    ]
+},
+
+{
+    id: 44,
+    title: "The Photo Album Society",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/photo-album.jpg",
+    duration: "1-2 Hours",
+    short: "Old photographs, treasured memories, and stories worth retelling.",
+    description:
+      "A leisurely gathering spent looking through photographs, revisiting favorite memories, and sharing stories from years gone by.",
+    details: [
+      "Photographs",
+      "Memories",
+      "Storytelling",
+      "Togetherness"
+    ]
 }
-  
+
 ];
 
 const DEV_IPS = [
-    "24.197.139.5", "172.59.217.234"
+  "24.197.139.5", "172.59.217.234"
 ];
 
 const filtersToggle =
-    document.querySelector(".filters__toggle");
+  document.querySelector(".filters__toggle");
 
 const filters = document.querySelectorAll(".filter-pill");
 const grid = document.getElementById("experience-grid");
@@ -700,53 +826,53 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function initLenis() {
 
-    // Disable on phones/tablets
-    if (window.innerWidth <= 768) {
-        return;
-    }
+  // Disable on phones/tablets
+  if (window.innerWidth <= 768) {
+    return;
+  }
 
-    if (!window.Lenis) return;
+  if (!window.Lenis) return;
 
-    const lenis = new Lenis({
-        duration: 1.2,
-        smoothWheel: true
-    });
+  const lenis = new Lenis({
+    duration: 1.2,
+    smoothWheel: true
+  });
 
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 }
 
 function initMobileFilters() {
 
-    if (!filtersToggle) return;
+  if (!filtersToggle) return;
 
-    filtersToggle.addEventListener("click", () => {
+  filtersToggle.addEventListener("click", () => {
 
-        document
-            .querySelector(".filters")
-            .classList
-            .toggle("open");
+    document
+      .querySelector(".filters")
+      .classList
+      .toggle("open");
 
-    });
+  });
 }
 
 function renderExperiences() {
-    const filtered =
-      activeFilter === "all"
-          ? experiences
-          : experiences.filter(item =>
-              item.tags.includes(activeFilter)
-          );
+  const filtered =
+    activeFilter === "all"
+      ? experiences
+      : experiences.filter(item =>
+        item.tags.includes(activeFilter)
+      );
 
-    grid.innerHTML = filtered
-        .map(item => {
-            const isComplete = false;
+  grid.innerHTML = filtered
+    .map(item => {
+      const isComplete = false;
 
-            return `
+      return `
                 <article class="experience-card ${isComplete ? "complete" : ""}" data-id="${item.id}">
                     <div 
                         class="experience-card__image" 
@@ -773,35 +899,35 @@ function renderExperiences() {
                     </div>
                 </article>
             `;
-        })
-        .join("");
+    })
+    .join("");
 
-    document.querySelectorAll(".experience-card").forEach(card => {
-        card.addEventListener("click", () => {
-            const id = Number(card.dataset.id);
-            const experience = experiences.find(item => item.id === id);
-            openModal(experience);
-        });
+  document.querySelectorAll(".experience-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const id = Number(card.dataset.id);
+      const experience = experiences.find(item => item.id === id);
+      openModal(experience);
     });
+  });
 
-    if (window.gsap) {
-        gsap.fromTo(
-            ".experience-card",
-            {
-                opacity: 0,
-                y: 40,
-                scale: 0.96
-            },
-            {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-                duration: 0.65,
-                stagger: 0.08,
-                ease: "power3.out"
-            }
-        );
-    }
+  if (window.gsap) {
+    gsap.fromTo(
+      ".experience-card",
+      {
+        opacity: 0,
+        y: 40,
+        scale: 0.96
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.65,
+        stagger: 0.08,
+        ease: "power3.out"
+      }
+    );
+  }
 }
 
 function bindFilters() {
@@ -812,20 +938,20 @@ function bindFilters() {
 
       activeFilter = button.dataset.filter;
       const toggle =
-          document.querySelector(".filters__toggle");
-      
+        document.querySelector(".filters__toggle");
+
       if (toggle) {
-      
-          toggle.textContent =
-              `✦ ${button.textContent}`;
-      
+
+        toggle.textContent =
+          `✦ ${button.textContent}`;
+
       }
-      
+
       document
-          .querySelector(".filters")
-          .classList
-          .remove("open");
-      
+        .querySelector(".filters")
+        .classList
+        .remove("open");
+
       renderExperiences();
     });
   });
@@ -918,197 +1044,197 @@ function closeModal() {
 
 function initModalSwipeClose() {
 
-    const modal =
-        document.querySelector(".experience-modal");
+  const modal =
+    document.querySelector(".experience-modal");
 
-    const panel =
-        document.querySelector(".experience-modal__panel");
+  const panel =
+    document.querySelector(".experience-modal__panel");
 
-    if (!modal || !panel) return;
+  if (!modal || !panel) return;
 
-    let startY = 0;
-    let currentY = 0;
+  let startY = 0;
+  let currentY = 0;
 
-    panel.addEventListener("touchstart", e => {
+  panel.addEventListener("touchstart", e => {
 
-        startY =
-            e.touches[0].clientY;
+    startY =
+      e.touches[0].clientY;
 
-    }, { passive: true });
+  }, { passive: true });
 
-    panel.addEventListener("touchmove", e => {
+  panel.addEventListener("touchmove", e => {
 
-        currentY =
-            e.touches[0].clientY;
+    currentY =
+      e.touches[0].clientY;
 
-        const delta = Math.min(0,currentY - startY);
+    const delta = Math.min(0, currentY - startY);
 
-        panel.style.transform = `translateY(${delta}px)`;
+    panel.style.transform = `translateY(${delta}px)`;
 
-    }, { passive: true });
+  }, { passive: true });
 
-    panel.addEventListener("touchend", () => {
+  panel.addEventListener("touchend", () => {
 
-        const delta = startY - currentY;
+    const delta = startY - currentY;
 
-        if(delta > 120){
-            closeModal();
-        }
-    });
+    if (delta > 120) {
+      closeModal();
+    }
+  });
 }
 
 async function initCountdown() {
 
-    const countdownSection =
-        document.getElementById("countdown-section");
-    const mainContent =
-        document.getElementById("main-content");
-    let bypassReveal = false;
+  const countdownSection =
+    document.getElementById("countdown-section");
+  const mainContent =
+    document.getElementById("main-content");
+  let bypassReveal = false;
 
-    try {
+  try {
 
-        const response =
-            await fetch("https://api.ipify.org?format=json");
+    const response =
+      await fetch("https://api.ipify.org?format=json");
 
-        const data =
-            await response.json();
+    const data =
+      await response.json();
 
-        if (DEV_IPS.includes(data.ip)) {
-      
-            bypassReveal = true;
-        
-            if (mainContent) {
-                mainContent.style.display = "block";
-            }
-        }
+    if (DEV_IPS.includes(data.ip)) {
 
-    } catch (e) {
-        console.log("IP check failed");
+      bypassReveal = true;
+
+      if (mainContent) {
+        mainContent.style.display = "block";
+      }
     }
 
-    const revealDate = new Date(
-        "2026-06-10T12:00:00-04:00"
-    );
+  } catch (e) {
+    console.log("IP check failed");
+  }
+
+  const revealDate = new Date(
+    "2026-06-10T12:00:00-04:00"
+  );
+
+  const now = new Date();
+
+  if (now >= revealDate) {
+
+    if (countdownSection) {
+      countdownSection.style.display = "none";
+    }
+
+    if (mainContent) {
+      mainContent.style.display = "block";
+    }
+
+    const subtitle =
+      document.querySelector(".hero__subtitle");
+
+    if (subtitle) {
+      subtitle.textContent =
+        "The Gathering Has Begun";
+    }
+
+    return;
+  }
+
+  if (mainContent && !bypassReveal) {
+    mainContent.style.display = "none";
+  }
+
+  if (countdownSection) {
+    countdownSection.style.display = "block";
+  }
+
+  function updateCountdown() {
 
     const now = new Date();
 
-    if (now >= revealDate) {
+    const diff =
+      revealDate - now;
 
-        if (countdownSection) {
-            countdownSection.style.display = "none";
-        }
+    const days =
+      Math.floor(
+        diff / (1000 * 60 * 60 * 24)
+      );
 
-        if (mainContent) {
-            mainContent.style.display = "block";
-        }
+    const hours =
+      Math.floor(
+        (diff % (1000 * 60 * 60 * 24))
+        /
+        (1000 * 60 * 60)
+      );
 
-        const subtitle =
-            document.querySelector(".hero__subtitle");
+    const minutes =
+      Math.floor(
+        (diff % (1000 * 60 * 60))
+        /
+        (1000 * 60)
+      );
 
-        if (subtitle) {
-            subtitle.textContent =
-                "The Gathering Has Begun";
-        }
-
-        return;
-    }
-
-    if (mainContent && !bypassReveal) {
-        mainContent.style.display = "none";
-    }
-
-    if (countdownSection) {
-        countdownSection.style.display = "block";
-    }
-
-    function updateCountdown() {
-
-        const now = new Date();
-
-        const diff =
-            revealDate - now;
-
-        const days =
-            Math.floor(
-                diff / (1000 * 60 * 60 * 24)
-            );
-
-        const hours =
-            Math.floor(
-                (diff % (1000 * 60 * 60 * 24))
-                /
-                (1000 * 60 * 60)
-            );
-
-        const minutes =
-            Math.floor(
-                (diff % (1000 * 60 * 60))
-                /
-                (1000 * 60)
-            );
-
-        const seconds =
-            Math.floor(
-                (diff % (1000 * 60))
-                /
-                1000
-            );
-
-        document.getElementById(
-            "daysRemaining"
-        ).innerHTML =
-            `<span>${days}</span><span> Days</span>`;
-
-        const hoursEl =
-            document.getElementById("hoursRemaining");
-        
-        const minutesEl =
-            document.getElementById("minutesRemaining");
-        
-        const secondsEl =
-            document.getElementById("secondsRemaining");
-        
-        if (
-            hoursEl &&
-            minutesEl &&
-            secondsEl
-        ) {
-        
-            hoursEl.textContent =
-                String(hours).padStart(2, "0");
-        
-            minutesEl.textContent =
-                String(minutes).padStart(2, "0");
-        
-            secondsEl.textContent =
-                String(seconds).padStart(2, "0");
-        
-        }
-
-        if (window.gsap && secondsEl) {
-            gsap.killTweensOf(secondsEl);
-        
-            gsap.fromTo(
-                secondsEl,
-                {
-                    scale: 1.12
-                },
-                {
-                    scale: 1,
-                    duration: 0.3,
-                    ease: "power2.out"
-                }
-            );
-        }
-      
-    }
-
-    updateCountdown();
-
-    setInterval(
-        updateCountdown,
+    const seconds =
+      Math.floor(
+        (diff % (1000 * 60))
+        /
         1000
-    );
+      );
+
+    document.getElementById(
+      "daysRemaining"
+    ).innerHTML =
+      `<span>${days}</span><span> Days</span>`;
+
+    const hoursEl =
+      document.getElementById("hoursRemaining");
+
+    const minutesEl =
+      document.getElementById("minutesRemaining");
+
+    const secondsEl =
+      document.getElementById("secondsRemaining");
+
+    if (
+      hoursEl &&
+      minutesEl &&
+      secondsEl
+    ) {
+
+      hoursEl.textContent =
+        String(hours).padStart(2, "0");
+
+      minutesEl.textContent =
+        String(minutes).padStart(2, "0");
+
+      secondsEl.textContent =
+        String(seconds).padStart(2, "0");
+
+    }
+
+    if (window.gsap && secondsEl) {
+      gsap.killTweensOf(secondsEl);
+
+      gsap.fromTo(
+        secondsEl,
+        {
+          scale: 1.12
+        },
+        {
+          scale: 1,
+          duration: 0.3,
+          ease: "power2.out"
+        }
+      );
+    }
+
+  }
+
+  updateCountdown();
+
+  setInterval(
+    updateCountdown,
+    1000
+  );
 }
 
 function initMemoryHunt() {
@@ -1132,18 +1258,18 @@ function initMemoryHunt() {
 
 function blowKiss() {
 
-    const kitty =
-        document.querySelector(".kitty-runner");
+  const kitty =
+    document.querySelector(".kitty-runner");
 
-    if (!kitty) return;
+  if (!kitty) return;
 
-    const rect =
-        kitty.getBoundingClientRect();
+  const rect =
+    kitty.getBoundingClientRect();
 
-    const heart =
-        document.createElement("div");
+  const heart =
+    document.createElement("div");
 
-    heart.innerHTML = `
+  heart.innerHTML = `
       <svg width="60" height="60" viewBox="0 0 120 120">
       
         <path
@@ -1182,211 +1308,211 @@ function blowKiss() {
       
       </svg>
       `;
-    heart.className = "kitty-kiss";
+  heart.className = "kitty-kiss";
 
-    document.body.appendChild(heart);
+  document.body.appendChild(heart);
 
-    gsap.set(heart, {
-        position: "fixed",
-        left: rect.left + 75,
-        top: rect.top + 45,
-        xPercent: -50,
-        yPercent: -50,
-        scale: 0.3,
-        opacity: 1
-    });
+  gsap.set(heart, {
+    position: "fixed",
+    left: rect.left + 75,
+    top: rect.top + 45,
+    xPercent: -50,
+    yPercent: -50,
+    scale: 0.3,
+    opacity: 1
+  });
 
-    gsap.to(heart, {
-        scale: 10,
-        opacity: 0,
-        duration: 1.2,
-        ease: "power3.out",
-        onComplete: () => {
-            heart.remove();
-        }
-    });
+  gsap.to(heart, {
+    scale: 10,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power3.out",
+    onComplete: () => {
+      heart.remove();
+    }
+  });
 }
 
 function createSparkles() {
 
-    for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 12; i++) {
 
-        const sparkle =
-            document.createElement("div");
+    const sparkle =
+      document.createElement("div");
 
-        sparkle.className = "sparkle";
+    sparkle.className = "sparkle";
 
-        document.body.appendChild(sparkle);
+    document.body.appendChild(sparkle);
 
-        gsap.set(sparkle, {
-            x: window.innerWidth / 2,
-            y: window.innerHeight / 2
-        });
+    gsap.set(sparkle, {
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2
+    });
 
-        gsap.to(sparkle, {
-            x: "+=" + gsap.utils.random(-250, 250),
-            y: "+=" + gsap.utils.random(-250, 250),
-            opacity: 0,
-            scale: 0,
-            duration: 1.2,
-            onComplete: () => sparkle.remove()
-        });
-    }
+    gsap.to(sparkle, {
+      x: "+=" + gsap.utils.random(-250, 250),
+      y: "+=" + gsap.utils.random(-250, 250),
+      opacity: 0,
+      scale: 0,
+      duration: 1.2,
+      onComplete: () => sparkle.remove()
+    });
+  }
 }
 
 function initKittyAnimation() {
-    const kitty = document.querySelector(".kitty-runner");
-    const bow = document.querySelector(".kitty-bow");
+  const kitty = document.querySelector(".kitty-runner");
+  const bow = document.querySelector(".kitty-bow");
 
-    if (!kitty || !bow || !window.gsap) return;
+  if (!kitty || !bow || !window.gsap) return;
 
-    const leftFoot = document.querySelector(".kitty-foot-left");
-    const rightFoot = document.querySelector(".kitty-foot-right");
-    const kittySvg = document.querySelector(".kitty-svg");
+  const leftFoot = document.querySelector(".kitty-foot-left");
+  const rightFoot = document.querySelector(".kitty-foot-right");
+  const kittySvg = document.querySelector(".kitty-svg");
 
   const isMobile = window.innerWidth < 768;
 
   const kittyTargetX = isMobile
-      ? () => window.innerWidth - 140
-      : () => window.innerWidth - 450;
-  
+    ? () => window.innerWidth - 140
+    : () => window.innerWidth - 450;
+
   const bowTargetX = isMobile
-      ? () => window.innerWidth - 70
-      : () => window.innerWidth - 150;
+    ? () => window.innerWidth - 70
+    : () => window.innerWidth - 150;
 
-    // Kill any previous animations
-    gsap.killTweensOf([
-        kitty,
-        bow,
-        leftFoot,
-        rightFoot,
-        kittySvg
-    ]);
+  // Kill any previous animations
+  gsap.killTweensOf([
+    kitty,
+    bow,
+    leftFoot,
+    rightFoot,
+    kittySvg
+  ]);
 
-    // Running bounce
-    if (kittySvg) {
-        gsap.to(kittySvg, {
-            y: -8,
-            duration: 0.18,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut"
-        });
-    }
-
-    // Feet movement
-    if (leftFoot) {
-        gsap.to(leftFoot, {
-            rotation: 25,
-            transformOrigin: "center center",
-            duration: 0.12,
-            repeat: -1,
-            yoyo: true,
-            ease: "none"
-        });
-    }
-
-    if (rightFoot) {
-        gsap.to(rightFoot, {
-            rotation: -25,
-            transformOrigin: "center center",
-            duration: 0.12,
-            repeat: -1,
-            yoyo: true,
-            ease: "none"
-        });
-    }
-
-    // Bow floating
-    gsap.to(bow, {
-        y: -18,
-        rotation: 10,
-        duration: 0.8,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut"
+  // Running bounce
+  if (kittySvg) {
+    gsap.to(kittySvg, {
+      y: -8,
+      duration: 0.18,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut"
     });
+  }
 
-    // Kitty chase timeline
-    const chase = gsap.timeline({
-        repeat: -1,
-        repeatDelay: 0,
-        defaults: {
-            ease: "power1.inOut"
-        }
+  // Feet movement
+  if (leftFoot) {
+    gsap.to(leftFoot, {
+      rotation: 25,
+      transformOrigin: "center center",
+      duration: 0.12,
+      repeat: -1,
+      yoyo: true,
+      ease: "none"
     });
+  }
 
-const leftSide = 20;
-const rightSide = () => window.innerWidth - (isMobile ? 140 : 260);
+  if (rightFoot) {
+    gsap.to(rightFoot, {
+      rotation: -25,
+      transformOrigin: "center center",
+      duration: 0.12,
+      repeat: -1,
+      yoyo: true,
+      ease: "none"
+    });
+  }
 
-chase
+  // Bow floating
+  gsap.to(bow, {
+    y: -18,
+    rotation: 10,
+    duration: 0.8,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
 
-      .set(kitty, {
-        x: leftSide,
-        scaleX: 1
+  // Kitty chase timeline
+  const chase = gsap.timeline({
+    repeat: -1,
+    repeatDelay: 0,
+    defaults: {
+      ease: "power1.inOut"
+    }
+  });
+
+  const leftSide = 20;
+  const rightSide = () => window.innerWidth - (isMobile ? 140 : 260);
+
+  chase
+
+    .set(kitty, {
+      x: leftSide,
+      scaleX: 1
     })
-    
+
     .set(bow, {
-        x: rightSide()
+      x: rightSide()
     })
-  
+
     // Run right
     .to(kitty, {
-        x: rightSide,
-        duration: 4.5
+      x: rightSide,
+      duration: 4.5
     })
 
     .call(() => blowKiss())
 
     .to(kitty, {
-        rotation: -10,
-        duration: 0.15,
-        repeat: 2,
-        yoyo: true
+      rotation: -10,
+      duration: 0.15,
+      repeat: 2,
+      yoyo: true
     })
 
     .set(kitty, {
-        scaleX: -1
+      scaleX: -1
     })
 
     // Run left
     .to(kitty, {
-        x: leftSide,
-        duration: 4.5
+      x: leftSide,
+      duration: 4.5
     })
 
     .call(() => blowKiss())
 
     .to(kitty, {
-        rotation: 10,
-        duration: 0.15,
-        repeat: 2,
-        yoyo: true
+      rotation: 10,
+      duration: 0.15,
+      repeat: 2,
+      yoyo: true
     })
 
     .set(kitty, {
-        scaleX: 1
+      scaleX: 1
     });
 
-    // Make kitty speed up as countdown gets closer
-    if (typeof daysRemaining !== "undefined") {
+  // Make kitty speed up as countdown gets closer
+  if (typeof daysRemaining !== "undefined") {
 
-        const days = parseInt(
-            document.getElementById("daysRemaining")?.textContent || "99"
-        );
+    const days = parseInt(
+      document.getElementById("daysRemaining")?.textContent || "99"
+    );
 
-        if (days <= 7) {
-            chase.timeScale(1.3);
-        }
-
-        if (days <= 3) {
-            chase.timeScale(1.7);
-        }
-
-        if (days <= 1) {
-            chase.timeScale(2.2);
-        }
+    if (days <= 7) {
+      chase.timeScale(1.3);
     }
+
+    if (days <= 3) {
+      chase.timeScale(1.7);
+    }
+
+    if (days <= 1) {
+      chase.timeScale(2.2);
+    }
+  }
 
 }
 
