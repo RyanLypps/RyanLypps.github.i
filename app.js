@@ -504,6 +504,78 @@ const experiences = [
       "History",
       "Exploration"
     ]
+},
+
+{
+    id: 29,
+    title: "The Music & Merriment Society",
+    location: "The Lypps Estate",
+    tags: ["estate", "fellowship"],
+    image: "./images/music-game-night.jpg",
+    duration: "2-4 Hours",
+    short: "Music, laughter, friendly competition, and an evening together.",
+    description:
+      "An evening devoted to music-themed games, conversation, snacks, and laughter as everyone gathers for a night of entertainment and fellowship.",
+    details: [
+      "Music Games",
+      "Friendly Competition",
+      "Conversation",
+      "Laughter"
+    ]
+},
+
+{
+    id: 30,
+    title: "The Veranda Retreat",
+    location: "The Lypps Estate",
+    tags: ["estate", "fellowship", "heirloom"],
+    image: "./images/veranda-couch.jpg",
+    duration: "1-3 Hours",
+    short: "A quiet evening on the upper patio enjoying the view and each other's company.",
+    description:
+      "A peaceful gathering on the second-floor veranda, relaxing on the couch, enjoying the fresh air, and spending unhurried time together.",
+    details: [
+      "Upper Veranda",
+      "Fresh Air",
+      "Conversation",
+      "Relaxation"
+    ]
+},
+
+{
+    id: 31,
+    title: "An Introduction to Fuji-San",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/fuji-san.jpg",
+    duration: "30-60 Minutes",
+    short: "A memorable first meeting between Zion and the estate's most distinguished resident.",
+    description:
+      "A special introduction as Zion meets Fuji-San, the estate's beloved sulcata tortoise, creating a unique memory and perhaps the beginning of a lifelong friendship.",
+    details: [
+      "Fuji-San",
+      "Zion",
+      "Estate Tradition",
+      "Photo Opportunity"
+    ]
+},
+
+{
+    id: 32,
+    title: "The Vintner's Hour",
+    location: "The Lypps Estate",
+    tags: ["estate", "fellowship"],
+    image: "./images/wine-night.jpg",
+    duration: "1-3 Hours",
+    short: "Wine, conversation, and a slow Southern evening.",
+    description:
+      "A relaxed gathering centered around good wine, meaningful conversation, and enjoying the comfort of the estate together.",
+    details: [
+      "Wine",
+      "Conversation",
+      "Relaxation",
+      "Fellowship"
+    ]
 }
   
 ];
