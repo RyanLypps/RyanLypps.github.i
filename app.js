@@ -421,7 +421,7 @@ const experiences = [
     title: "The Sushi Excursion",
     location: "Maki Sushi Bar & Bistro",
     tags: ["town", "fellowship"],
-    image: "./images/maki-sushi.jpg",
+    image: "./images/maki-sushi.webp",
     duration: "1-2 Hours",
     short: "Fresh sushi, shared plates, and an evening together.",
     description:
