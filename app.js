@@ -288,6 +288,222 @@ const experiences = [
       "Conversation",
       "Beautiful Weather"
     ]
+},
+
+  {
+    id: 17,
+    title: "The Smokehouse Supper",
+    location: "Fork Grove BBQ",
+    tags: ["town", "fellowship"],
+    image: "./images/fork-grove-bbq.jpg",
+    duration: "1-2 Hours",
+    short: "Slow-smoked barbecue, Southern hospitality, and good conversation.",
+    description:
+      "An evening devoted to Carolina barbecue, comfort food, and fellowship around the table at one of the area's local favorites.",
+    details: [
+      "Barbecue",
+      "Southern Cuisine",
+      "Conversation",
+      "Fellowship"
+    ]
+},
+
+{
+    id: 18,
+    title: "The Cantina Gathering",
+    location: "El Arriero Downtown",
+    tags: ["town", "fellowship"],
+    image: "./images/el-arriero.jpg",
+    duration: "1-2 Hours",
+    short: "Authentic Mexican food, vibrant flavors, and shared laughter.",
+    description:
+      "A festive meal featuring classic Mexican cuisine, refreshing drinks, and an evening of conversation in the heart of downtown Anderson.",
+    details: [
+      "Mexican Cuisine",
+      "Downtown Dining",
+      "Conversation",
+      "Celebration"
+    ]
+},
+
+{
+    id: 19,
+    title: "The Culinary Tour of Anderson",
+    location: "Anderson County",
+    tags: ["town", "heirloom"],
+    image: "./images/anderson-dining.jpg",
+    duration: "Flexible",
+    short: "A collection of the area's finest dining destinations.",
+    description:
+      "An opportunity to visit some of Anderson's most beloved restaurants, including Sullivan's Metropolitan Grill, The Barnwood Grill & Market, Raines on Main, Mr. Rivers Breakfast Joint, and Maki Sushi Bar & Bistro.",
+    details: [
+      "Fine Dining",
+      "Local Favorites",
+      "Culinary Exploration",
+      "Shared Meals"
+    ]
+},
+
+{
+    id: 20,
+    title: "The Metropolitan Supper",
+    location: "Sullivan's Metropolitan Grill",
+    tags: ["town", "fellowship"],
+    image: "./images/sullivans.jpg",
+    duration: "1-2 Hours",
+    short: "An elegant evening of fine dining and conversation.",
+    description:
+      "A refined dinner experience featuring exceptional cuisine, warm hospitality, and an atmosphere suited to meaningful conversation.",
+    details: [
+      "Fine Dining",
+      "Elegant Atmosphere",
+      "Conversation",
+      "Evening Out"
+    ]
+},
+
+{
+    id: 21,
+    title: "The Barnwood Feast",
+    location: "The Barnwood Grill & Market",
+    tags: ["town", "fellowship"],
+    image: "./images/barnwood.jpg",
+    duration: "1-2 Hours",
+    short: "Southern comfort food served in a welcoming setting.",
+    description:
+      "A relaxed meal featuring hearty Southern favorites, local flavors, and good company.",
+    details: [
+      "Southern Cuisine",
+      "Comfort Food",
+      "Local Favorite",
+      "Conversation"
+    ]
+},
+
+{
+    id: 22,
+    title: "An Evening on Main",
+    location: "Raines on Main",
+    tags: ["town", "fellowship"],
+    image: "./images/raines-on-main.jpg",
+    duration: "1-2 Hours",
+    short: "A sophisticated downtown dining experience.",
+    description:
+      "An evening spent enjoying thoughtfully prepared dishes, beautiful surroundings, and unhurried conversation.",
+    details: [
+      "Downtown Dining",
+      "Fine Cuisine",
+      "Conversation",
+      "Evening Fellowship"
+    ]
+},
+
+{
+    id: 23,
+    title: "The Breakfast Society",
+    location: "Mr. Rivers Breakfast Joint",
+    tags: ["town", "fellowship"],
+    image: "./images/mr-rivers.jpg",
+    duration: "1 Hour",
+    short: "A hearty breakfast and a wonderful start to the day.",
+    description:
+      "A morning gathering centered around breakfast classics, coffee, and cheerful conversation.",
+    details: [
+      "Breakfast",
+      "Coffee",
+      "Morning Fellowship",
+      "Local Favorite"
+    ]
+},
+
+{
+    id: 24,
+    title: "The Sushi Excursion",
+    location: "Maki Sushi Bar & Bistro",
+    tags: ["town", "fellowship"],
+    image: "./images/maki-sushi.jpg",
+    duration: "1-2 Hours",
+    short: "Fresh sushi, shared plates, and an evening together.",
+    description:
+      "A dining experience featuring handcrafted sushi, unique flavors, and relaxed conversation.",
+    details: [
+      "Sushi",
+      "Shared Plates",
+      "Conversation",
+      "Evening Out"
+    ]
+},
+
+{
+    id: 25,
+    title: "The Rooftop Sunset",
+    location: "UP on the Roof",
+    tags: ["town", "heirloom"],
+    image: "./images/up-on-the-roof.jpg",
+    duration: "1-2 Hours",
+    short: "A beautiful view of Anderson as the sun sets over the city.",
+    description:
+      "An evening spent overlooking the Electric City from above, enjoying the scenery, conversation, and a memorable sunset.",
+    details: [
+      "Rooftop Views",
+      "Sunset",
+      "Conversation",
+      "City Skyline"
+    ]
+},
+
+{
+    id: 26,
+    title: "The Sweet Tooth Society",
+    location: "Any Ice Cream Shop",
+    tags: ["town", "fellowship"],
+    image: "./images/ice-cream.jpg",
+    duration: "30-60 Minutes",
+    short: "Ice cream, laughter, and a simple shared pleasure.",
+    description:
+      "A quick outing for a sweet treat, conversation, and a pleasant stroll together.",
+    details: [
+      "Ice Cream",
+      "Sweet Treats",
+      "Conversation",
+      "Stroll"
+    ]
+},
+
+{
+    id: 27,
+    title: "The Bookshop Ramble",
+    location: "Any Bookstore",
+    tags: ["town", "heirloom"],
+    image: "./images/bookstore.jpg",
+    duration: "1-2 Hours",
+    short: "Shelves of stories waiting to be discovered.",
+    description:
+      "An afternoon browsing books, sharing recommendations, and discovering hidden treasures among the shelves.",
+    details: [
+      "Books",
+      "Exploration",
+      "Recommendations",
+      "Hidden Treasures"
+    ]
+},
+
+{
+    id: 28,
+    title: "The Antiquarian's Hunt",
+    location: "Any Antique Shop",
+    tags: ["town", "heirloom"],
+    image: "./images/antiques.jpg",
+    duration: "1-3 Hours",
+    short: "Searching for treasures from another age.",
+    description:
+      "A leisurely hunt for antiques, curiosities, and heirlooms with stories of their own.",
+    details: [
+      "Antiques",
+      "Treasure Hunting",
+      "History",
+      "Exploration"
+    ]
 }
   
 ];
