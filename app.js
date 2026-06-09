@@ -218,23 +218,23 @@ const experiences = [
     ]
 },
 
-{
-    id: 13,
-    title: "The Croquet Match",
-    location: "The Lypps Estate",
-    tags: ["estate", "heirloom"],
-    image: "./images/croquet.jpg",
-    duration: "1-2 Hours",
-    short: "A classic lawn game played beneath the Carolina sky.",
-    description:
-      "An afternoon of friendly competition and laughter on the estate grounds, embracing one of the great traditions of garden gatherings.",
-    details: [
-      "Croquet",
-      "Garden Lawn",
-      "Friendly Competition",
-      "Outdoor Fellowship"
-    ]
-},
+// {
+//     id: 13,
+//     title: "The Croquet Match",
+//     location: "The Lypps Estate",
+//     tags: ["estate", "heirloom"],
+//     image: "./images/croquet.jpg",
+//     duration: "1-2 Hours",
+//     short: "A classic lawn game played beneath the Carolina sky.",
+//     description:
+//       "An afternoon of friendly competition and laughter on the estate grounds, embracing one of the great traditions of garden gatherings.",
+//     details: [
+//       "Croquet",
+//       "Garden Lawn",
+//       "Friendly Competition",
+//       "Outdoor Fellowship"
+//     ]
+// },
 
 {
   id: 14,
