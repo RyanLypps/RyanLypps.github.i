@@ -349,7 +349,7 @@ const experiences = [
     title: "The Metropolitan Supper",
     location: "Sullivan's Metropolitan Grill",
     tags: ["town", "fellowship"],
-    image: "./images/sullivans.jpg",
+    image: "./images/sullivans.webp",
     duration: "1-2 Hours",
     short: "An elegant evening of fine dining and conversation.",
     description:
@@ -367,7 +367,7 @@ const experiences = [
     title: "The Barnwood Feast",
     location: "The Barnwood Grill & Market",
     tags: ["town", "fellowship"],
-    image: "./images/barnwood.jpg",
+    image: "./images/barnwood.webp",
     duration: "1-2 Hours",
     short: "Southern comfort food served in a welcoming setting.",
     description:
@@ -385,7 +385,7 @@ const experiences = [
     title: "An Evening on Main",
     location: "Raines on Main",
     tags: ["town", "fellowship"],
-    image: "./images/raines-on-main.jpg",
+    image: "./images/raines-on-main.webp",
     duration: "1-2 Hours",
     short: "A sophisticated downtown dining experience.",
     description:
@@ -403,7 +403,7 @@ const experiences = [
     title: "The Breakfast Society",
     location: "Mr. Rivers Breakfast Joint",
     tags: ["town", "fellowship"],
-    image: "./images/mr-rivers.jpg",
+    image: "./images/mr-rivers.webp",
     duration: "1 Hour",
     short: "A hearty breakfast and a wonderful start to the day.",
     description:
