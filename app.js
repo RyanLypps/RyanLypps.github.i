@@ -259,7 +259,7 @@ const experiences = [
     title: "The Scot-Irish Supper",
     location: "McGee's Scot-Irish Pub",
     tags: ["town", "fellowship"],
-    image: "./images/mcgees-pub.jpg",
+    image: "./images/mcgees-pub.webp",
     duration: "1-2 Hours",
     short: "A hearty meal, good company, and a touch of Celtic tradition.",
     description:
@@ -277,7 +277,7 @@ const experiences = [
     title: "Above the Electric City",
     location: "UP on the Roof",
     tags: ["town", "heirloom"],
-    image: "./images/up-on-the-roof.jpg",
+    image: "./images/up-on-the-roof.webp",
     duration: "1-2 Hours",
     short: "Panoramic views, fresh air, and a beautiful Anderson afternoon.",
     description:
@@ -295,7 +295,7 @@ const experiences = [
     title: "The Smokehouse Supper",
     location: "Fork Grove BBQ",
     tags: ["town", "fellowship"],
-    image: "./images/fork-grove-bbq.jpg",
+    image: "./images/fork-grove-bbq.webp",
     duration: "1-2 Hours",
     short: "Slow-smoked barbecue, Southern hospitality, and good conversation.",
     description:
@@ -313,7 +313,7 @@ const experiences = [
     title: "The Cantina Gathering",
     location: "El Arriero Downtown",
     tags: ["town", "fellowship"],
-    image: "./images/el-arriero.jpg",
+    image: "./images/el-arriero.webp",
     duration: "1-2 Hours",
     short: "Authentic Mexican food, vibrant flavors, and shared laughter.",
     description:
