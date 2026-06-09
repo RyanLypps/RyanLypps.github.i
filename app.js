@@ -612,6 +612,60 @@ const experiences = [
       "Local Landmarks",
       "Electric City"
     ]
+},
+
+{
+    id: 35,
+    title: "The Estate Picnic",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/estate-picnic.jpg",
+    duration: "1-3 Hours",
+    short: "A picnic beneath the Carolina sky.",
+    description:
+      "A relaxing afternoon picnic on the estate grounds with blankets, snacks, conversation, and plenty of time to simply enjoy the day together.",
+    details: [
+      "Picnic",
+      "Fresh Air",
+      "Conversation",
+      "Relaxation"
+    ]
+},
+
+{
+    id: 36,
+    title: "The Hartwell Excursion",
+    location: "Lake Hartwell",
+    tags: ["town", "heirloom"],
+    image: "./images/lake-hartwell.jpg",
+    duration: "1-3 Hours",
+    short: "A peaceful visit to one of the Upstate's most beautiful lakes.",
+    description:
+      "A leisurely outing to Lake Hartwell to enjoy the scenery, fresh air, and waterfront views.",
+    details: [
+      "Lake Views",
+      "Scenic Drive",
+      "Relaxation",
+      "Photography"
+    ]
+},
+
+{
+    id: 37,
+    title: "The Bubble Garden",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/bubbles.jpg",
+    duration: "30-60 Minutes",
+    short: "Bubbles, laughter, and simple childhood joy.",
+    description:
+      "An afternoon of blowing bubbles indoors or outdoors as Zion chases, pops, and enjoys a little bit of magic.",
+    details: [
+      "Bubbles",
+      "Zion",
+      "Laughter",
+      "Photos"
+    ]
 }
   
 ];
