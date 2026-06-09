@@ -576,6 +576,42 @@ const experiences = [
       "Relaxation",
       "Fellowship"
     ]
+},
+
+{
+    id: 33,
+    title: "The Feline Drawing Room",
+    location: "The Lypps Estate",
+    tags: ["estate", "heirloom"],
+    image: "./images/cat-room.jpg",
+    duration: "1-2 Hours",
+    short: "An afternoon surrounded by cats, laughter, and family.",
+    description:
+      "A gathering in the cat room where Zion can meet the estate's feline residents, play, explore, and enjoy a room full of curious whiskers and personalities.",
+    details: [
+      "Estate Cats",
+      "Zion",
+      "Playtime",
+      "Photo Opportunities"
+    ]
+},
+
+{
+    id: 34,
+    title: "The Grand Tour of Anderson",
+    location: "Anderson County",
+    tags: ["town", "heirloom"],
+    image: "./images/anderson-drive.jpg",
+    duration: "1-2 Hours",
+    short: "A scenic drive showcasing the charm of Anderson.",
+    description:
+      "A leisurely drive through Anderson's historic districts, downtown streets, notable landmarks, and favorite local spots, offering a proper introduction to the Electric City.",
+    details: [
+      "Scenic Drive",
+      "Historic Districts",
+      "Local Landmarks",
+      "Electric City"
+    ]
 }
   
 ];
