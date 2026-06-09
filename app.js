@@ -326,23 +326,23 @@ const experiences = [
     ]
   },
 
-  {
-    id: 19,
-    title: "The Culinary Tour of Anderson",
-    location: "Anderson County",
-    tags: ["town", "heirloom"],
-    image: "./images/anderson-dining.jpg",
-    duration: "Flexible",
-    short: "A collection of the area's finest dining destinations.",
-    description:
-      "An opportunity to visit some of Anderson's most beloved restaurants, including Sullivan's Metropolitan Grill, The Barnwood Grill & Market, Raines on Main, Mr. Rivers Breakfast Joint, and Maki Sushi Bar & Bistro.",
-    details: [
-      "Fine Dining",
-      "Local Favorites",
-      "Culinary Exploration",
-      "Shared Meals"
-    ]
-  },
+  // {
+  //   id: 19,
+  //   title: "The Culinary Tour of Anderson",
+  //   location: "Anderson County",
+  //   tags: ["town", "heirloom"],
+  //   image: "./images/anderson-dining.jpg",
+  //   duration: "Flexible",
+  //   short: "A collection of the area's finest dining destinations.",
+  //   description:
+  //     "An opportunity to visit some of Anderson's most beloved restaurants, including Sullivan's Metropolitan Grill, The Barnwood Grill & Market, Raines on Main, Mr. Rivers Breakfast Joint, and Maki Sushi Bar & Bistro.",
+  //   details: [
+  //     "Fine Dining",
+  //     "Local Favorites",
+  //     "Culinary Exploration",
+  //     "Shared Meals"
+  //   ]
+  // },
 
   {
     id: 20,
@@ -434,23 +434,23 @@ const experiences = [
     ]
   },
 
-  {
-    id: 25,
-    title: "The Rooftop Sunset",
-    location: "UP on the Roof",
-    tags: ["town", "heirloom"],
-    image: "./images/up-on-the-roof.jpg",
-    duration: "1-2 Hours",
-    short: "A beautiful view of Anderson as the sun sets over the city.",
-    description:
-      "An evening spent overlooking the Electric City from above, enjoying the scenery, conversation, and a memorable sunset.",
-    details: [
-      "Rooftop Views",
-      "Sunset",
-      "Conversation",
-      "City Skyline"
-    ]
-  },
+  // {
+  //   id: 25,
+  //   title: "The Rooftop Sunset",
+  //   location: "UP on the Roof",
+  //   tags: ["town", "heirloom"],
+  //   image: "./images/up-on-the-roof.jpg",
+  //   duration: "1-2 Hours",
+  //   short: "A beautiful view of Anderson as the sun sets over the city.",
+  //   description:
+  //     "An evening spent overlooking the Electric City from above, enjoying the scenery, conversation, and a memorable sunset.",
+  //   details: [
+  //     "Rooftop Views",
+  //     "Sunset",
+  //     "Conversation",
+  //     "City Skyline"
+  //   ]
+  // },
 
   {
     id: 26,
