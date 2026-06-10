@@ -1,8 +1,8 @@
 const experiences = [
   {
     id: 1,
-    title: "The Southern Hemp Social, Anderson",
-    location: "Any Dispensary",
+    title: "The Southern Hemp Social",
+    location: "Any Dispensary, Anderson",
     tags: ["estate"],
     image: "./images/weed-leaf.jpg",
     duration: "30 Minutes",
@@ -455,9 +455,9 @@ const experiences = [
   {
     id: 26,
     title: "The Sweet Tooth Society",
-    location: "Any Ice Cream Shop",
+    location: "Figs Cafe & Farmacy",
     tags: ["town", "fellowship"],
-    image: "./images/ice-cream.jpg",
+    image: "./images/ice-cream.webp",
     duration: "30-60 Minutes",
     short: "Ice cream, laughter, and a simple shared pleasure.",
     description:
@@ -467,42 +467,6 @@ const experiences = [
       "Sweet Treats",
       "Conversation",
       "Stroll"
-    ]
-  },
-
-  {
-    id: 27,
-    title: "The Bookshop Ramble",
-    location: "Any Bookstore",
-    tags: ["town", "heirloom"],
-    image: "./images/bookstore.jpg",
-    duration: "1-2 Hours",
-    short: "Shelves of stories waiting to be discovered.",
-    description:
-      "An afternoon browsing books, sharing recommendations, and discovering hidden treasures among the shelves.",
-    details: [
-      "Books",
-      "Exploration",
-      "Recommendations",
-      "Hidden Treasures"
-    ]
-  },
-
-  {
-    id: 28,
-    title: "The Antiquarian's Hunt",
-    location: "Any Antique Shop",
-    tags: ["town", "heirloom"],
-    image: "./images/antiques.jpg",
-    duration: "1-3 Hours",
-    short: "Searching for treasures from another age.",
-    description:
-      "A leisurely hunt for antiques, curiosities, and heirlooms with stories of their own.",
-    details: [
-      "Antiques",
-      "Treasure Hunting",
-      "History",
-      "Exploration"
     ]
   },
 
