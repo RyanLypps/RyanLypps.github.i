@@ -1441,7 +1441,7 @@ function initKittyAnimation() {
       duration: 4.5
     })
 
-    .call(() => blowKiss())
+    // .call(() => blowKiss())
 
     .to(kitty, {
       rotation: -10,
@@ -1460,7 +1460,7 @@ function initKittyAnimation() {
       duration: 4.5
     })
 
-    .call(() => blowKiss())
+    // .call(() => blowKiss())
 
     .to(kitty, {
       rotation: 10,
