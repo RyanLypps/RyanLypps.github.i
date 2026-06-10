@@ -1470,3 +1470,281 @@ MOBILE
         padding-bottom: 5rem;
     }
 }
+
+/* =========================================
+   BEFORE WE PART
+========================================= */
+
+.farewell-tradition {
+
+    position: relative;
+
+    padding: 9rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(184,154,94,.12),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.55),
+            rgba(248,244,238,.98)
+        );
+
+    overflow: hidden;
+}
+
+.farewell-tradition::before {
+
+    content: "❀";
+
+    position: absolute;
+
+    top: 80px;
+    left: 10%;
+
+    font-size: 4rem;
+
+    color: rgba(184,154,94,.12);
+
+    pointer-events: none;
+}
+
+.farewell-tradition::after {
+
+    content: "✿";
+
+    position: absolute;
+
+    bottom: 120px;
+    right: 12%;
+
+    font-size: 5rem;
+
+    color: rgba(180,110,132,.08);
+
+    pointer-events: none;
+}
+
+.farewell-tradition .section-header {
+
+    max-width: 850px;
+
+    margin: 0 auto 5rem;
+
+    text-align: center;
+}
+
+.farewell-tradition .hero__eyebrow {
+
+    display: inline-block;
+
+    padding: .5rem 1.2rem;
+
+    border-radius: 999px;
+
+    background:
+        rgba(184,154,94,.12);
+
+    border:
+        1px solid rgba(184,154,94,.22);
+
+    color: var(--gold);
+
+    letter-spacing: .25em;
+
+    text-transform: uppercase;
+
+    font-size: .75rem;
+}
+
+.farewell-tradition h2 {
+
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+
+    color: var(--pink);
+
+    font-size:
+        clamp(
+            3.25rem,
+            6vw,
+            5rem
+        );
+
+    text-shadow:
+        0 8px 30px rgba(180,110,132,.12);
+}
+
+.farewell-tradition h2::after {
+
+    content: "❀ ❀ ❀";
+
+    display: block;
+
+    margin-top: 1rem;
+
+    color: rgba(184,154,94,.5);
+
+    font-size: 1rem;
+
+    letter-spacing: .6rem;
+}
+
+.farewell-tradition .section-header p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color:
+        rgba(31,31,31,.68);
+
+    font-size: 1.1rem;
+
+    line-height: 2;
+
+    font-style: italic;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.farewell-grid {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 1.5rem;
+}
+
+.farewell-card {
+
+    position: relative;
+
+    padding: 2.5rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.98),
+            rgba(248,244,238,.98)
+        );
+
+    border:
+        1px solid rgba(184,154,94,.18);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.05);
+
+    text-align: center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.farewell-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(184,154,94,.4);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.12);
+}
+
+.farewell-card__icon {
+
+    font-size: 2.75rem;
+
+    margin-bottom: 1rem;
+}
+
+.farewell-card h3 {
+
+    color: var(--pink);
+
+    font-size: 2rem;
+
+    margin-bottom: .75rem;
+}
+
+.farewell-card p {
+
+    color:
+        rgba(31,31,31,.72);
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+/* =========================================
+   CLOSING LINE
+========================================= */
+
+.farewell-tradition__closing {
+
+    max-width: 700px;
+
+    margin: 4rem auto 0;
+
+    text-align: center;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 1.6rem;
+
+    font-style: italic;
+
+    color: var(--gold);
+
+    opacity: .9;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px) {
+
+    .farewell-tradition {
+        padding: 6rem 1rem;
+    }
+
+    .farewell-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .farewell-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .farewell-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .farewell-tradition h2 {
+        font-size: 3rem;
+    }
+}
