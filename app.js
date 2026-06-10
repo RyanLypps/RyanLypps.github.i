@@ -1227,6 +1227,16 @@ function initMemoryHunt() {
 
 function blowKiss() {
 
+  const countdownSection =
+        document.getElementById("countdown-section");
+
+    if (
+        countdownSection &&
+        countdownSection.style.display === "none"
+    ) {
+        return;
+    }
+
   const kitty =
     document.querySelector(".kitty-runner");
 
