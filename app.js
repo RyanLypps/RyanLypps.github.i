@@ -1207,22 +1207,62 @@ async function initCountdown() {
 }
 
 function initMemoryHunt() {
-  const checks = document.querySelectorAll(".memory-item input");
 
-  checks.forEach((check, index) => {
-    const saved = localStorage.getItem(`memory-hunt-${index}`);
+    const checks =
+        document.querySelectorAll(
+            ".memory-item input"
+        );
 
-    if (saved === "true") {
-      check.checked = true;
-      check.closest(".memory-item").classList.add("complete");
-    }
+    checks.forEach((check, index) => {
 
-    check.addEventListener("change", () => {
-      localStorage.setItem(`memory-hunt-${index}`, check.checked);
+        const item =
+            check.closest(".memory-item");
 
-      check.closest(".memory-item").classList.toggle("complete", check.checked);
+        const saved =
+            localStorage.getItem(
+                `memory-hunt-${index}`
+            );
+
+        if (saved === "true") {
+
+            check.checked = true;
+
+            item.classList.add(
+                "complete"
+            );
+        }
+
+        check.addEventListener("change", () => {
+
+          localStorage.setItem(
+              `memory-hunt-${index}`,
+              check.checked
+          );
+
+          item.classList.toggle(
+              "complete",
+              check.checked
+          );
+
+          if (
+              check.checked &&
+              window.gsap
+          ) {
+              gsap.fromTo(
+                  item,
+                  {
+                      scale: 0.98
+                  },
+                  {
+                      scale: 1,
+                      duration: 0.3,
+                      ease: "back.out(2)"
+                  }
+              );
+          }
+
+      });
     });
-  });
 }
 
 function blowKiss() {
