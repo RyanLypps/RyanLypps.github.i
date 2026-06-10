@@ -1570,16 +1570,4 @@ function initScrollAnimations() {
     }
   });
 
-  gsap.utils.toArray(".memory-item, .gallery-card").forEach(element => {
-    gsap.from(element, {
-      opacity: 0,
-      y: 30,
-      duration: 0.7,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: element,
-        start: "top 85%"
-      }
-    });
-  });
 }
