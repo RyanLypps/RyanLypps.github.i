@@ -917,6 +917,11 @@ function bindFilters() {
         .remove("open");
 
       renderExperiences();
+
+      document.querySelector(".experiences").scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+      });
     });
   });
 }
