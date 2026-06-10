@@ -619,7 +619,7 @@ const experiences = [
     title: "The Bubble Garden",
     location: "The Lypps Estate",
     tags: ["estate", "heirloom"],
-    image: "./images/bubbles.jpg",
+    image: "./images/bubbles.webp",
     duration: "30-60 Minutes",
     short: "Bubbles, laughter, and simple childhood joy.",
     description:
@@ -637,7 +637,7 @@ const experiences = [
     title: "The Little Artist's Studio",
     location: "The Lypps Estate",
     tags: ["estate", "heirloom"],
-    image: "./images/little-artist.jpg",
+    image: "./images/little-artist.avif",
     duration: "30-60 Minutes",
     short: "Paint, color, create, and make a mess of memories.",
     description:
@@ -655,7 +655,7 @@ const experiences = [
     title: "The Little Ballroom",
     location: "The Lypps Estate",
     tags: ["estate", "heirloom"],
-    image: "./images/dance-party.jpg",
+    image: "./images/dance-party.jpeg",
     duration: "30-60 Minutes",
     short: "Music, dancing, laughter, and tiny feet in motion.",
     description:
@@ -691,7 +691,7 @@ const experiences = [
     title: "The Pajama Society",
     location: "The Lypps Estate",
     tags: ["estate", "fellowship"],
-    image: "./images/pajama-day.jpg",
+    image: "./images/pajama-day.webp",
     duration: "All Day",
     short: "Pajamas, snacks, films, and absolutely no obligations.",
     description:
@@ -727,7 +727,7 @@ const experiences = [
     title: "The Porch Swing Fellowship",
     location: "The Lypps Estate",
     tags: ["estate", "fellowship", "heirloom"],
-    image: "./images/porch-swing.jpg",
+    image: "./images/porch-swing.avif",
     duration: "1-3 Hours",
     short: "Fresh air, gentle conversation, and a slower pace of life.",
     description:
