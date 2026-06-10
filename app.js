@@ -493,7 +493,7 @@ const experiences = [
     title: "The Veranda Retreat",
     location: "The Lypps Estate",
     tags: ["estate", "fellowship", "heirloom"],
-    image: "./images/veranda-couch.jpg",
+    image: "./images/veranda-couch.webp",
     duration: "1-3 Hours",
     short: "A quiet evening on the upper patio enjoying the view and each other's company.",
     description:
@@ -529,7 +529,7 @@ const experiences = [
     title: "The Vintner's Hour",
     location: "The Lypps Estate",
     tags: ["estate", "fellowship"],
-    image: "./images/wine-night.jpg",
+    image: "./images/wine-night.webp",
     duration: "1-3 Hours",
     short: "Wine, conversation, and a slow Southern evening.",
     description:
