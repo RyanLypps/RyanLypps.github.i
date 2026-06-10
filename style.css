@@ -427,6 +427,70 @@ EXPERIENCES
    HEIRLOOM HUNT
 ========================================= */
 
+.memory-hunt .section-header {
+    max-width: 850px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.memory-hunt .hero__eyebrow {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    padding: .45rem 1rem;
+
+    border-radius: 999px;
+
+    background:
+        rgba(184,154,94,.12);
+
+    border:
+        1px solid rgba(184,154,94,.22);
+
+    color: var(--gold);
+
+    font-size: .75rem;
+
+    letter-spacing: .25em;
+
+    text-transform: uppercase;
+}
+
+.memory-hunt h2 {
+
+    margin-bottom: 1rem;
+
+    color: var(--pink);
+
+    font-size:
+        clamp(
+            3rem,
+            5vw,
+            4.5rem
+        );
+
+    text-shadow:
+        0 4px 20px rgba(180,110,132,.12);
+}
+
+.memory-hunt .section-header p:last-child {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color:
+        rgba(31,31,31,.72);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    font-style: italic;
+}
+
 .memory-hunt {
     padding: 8rem 1.5rem;
     background:
