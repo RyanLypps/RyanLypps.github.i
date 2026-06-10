@@ -547,7 +547,7 @@ const experiences = [
     title: "The Feline Drawing Room",
     location: "The Lypps Estate",
     tags: ["estate", "heirloom"],
-    image: "./images/cat-room.jpg",
+    image: "./images/cat-room.webp",
     duration: "1-2 Hours",
     short: "An afternoon surrounded by cats, laughter, and family.",
     description:
